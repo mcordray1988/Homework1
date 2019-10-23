@@ -1,0 +1,2377 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\fnil\fcharset0 AppleColorEmoji;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red86\green32\blue244;\red170\green171\blue37;
+\red57\green192\blue38;\red202\green51\blue35;\red153\green153\blue153;\red230\green229\blue230;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c41680\c25960\c96645;\cssrgb\c72330\c71683\c18597;
+\cssrgb\c25704\c77963\c19556;\cssrgb\c83898\c28665\c18024;\cssrgb\c66422\c66424\c66423;\cssrgb\c91984\c91986\c91985;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Thu Jul 18 11:45:42 on ttys001\
+MacBook-Pro:~ morgancordray$ ls -al ~/.ssh\
+ls: /Users/morgancordray/.ssh: No such file or directory\
+MacBook-Pro:~ morgancordray$ ssh-keygen -t rsa -b 4096 -C "mcordray88@protonmail.com"\
+Generating public/private rsa key pair.\
+Enter file in which to save the key (/Users/morgancordray/.ssh/id_rsa): \
+Created directory '/Users/morgancordray/.ssh'.\
+Enter passphrase (empty for no passphrase): \
+Enter same passphrase again: \
+Your identification has been saved in /Users/morgancordray/.ssh/id_rsa.\
+Your public key has been saved in /Users/morgancordray/.ssh/id_rsa.pub.\
+The key fingerprint is:\
+SHA256:u/ahjBP4h38/o+OI2RMU6pRx0Lho6ILTPhg6eeUbl2c mcordray88@protonmail.com\
+The key's randomart image is:\
++---[RSA 4096]----+\
+|      .+         |\
+|      o +        |\
+|   . . * .       |\
+|  . o = .        |\
+|.o . + .S        |\
+|= o o o...       |\
+|.B o..ooE..      |\
+|= + .o+O++o.o    |\
+| o ...+=B=++.o   |\
++----[SHA256]-----+\
+MacBook-Pro:~ morgancordray$ eval "$(ssh-agent -s)"\
+Agent pid 4070\
+MacBook-Pro:~ morgancordray$ ssh-add ~/.ssh/id_rsa\
+Enter passphrase for /Users/morgancordray/.ssh/id_rsa: \
+Identity added: /Users/morgancordray/.ssh/id_rsa (/Users/morgancordray/.ssh/id_rsa)\
+MacBook-Pro:~ morgancordray$ pbcopy < ~/.ssh/id_rsa.pub\
+MacBook-Pro:~ morgancordray$ ssh -T git@github.com\
+The authenticity of host 'github.com (192.30.255.112)' can't be established.\
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.\
+Are you sure you want to continue connecting (yes/no)? yes\
+Warning: Permanently added 'github.com,192.30.255.112' (RSA) to the list of known hosts.\
+Hi mcordray1988! You've successfully authenticated, but GitHub does not provide shell access.\
+MacBook-Pro:~ morgancordray$ brew install python3\
+-bash: brew: command not found\
+MacBook-Pro:~ morgancordray$ install python3\
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]\
+               [-o owner] file1 file2\
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]\
+               [-o owner] file1 ... fileN directory\
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...\
+MacBook-Pro:~ morgancordray$ python -- version\
+python: can't open file 'version': [Errno 2] No such file or directory\
+MacBook-Pro:~ morgancordray$ python --version\
+Python 2.7.15 :: Anaconda, Inc.\
+MacBook-Pro:~ morgancordray$ xcode --version\
+-bash: xcode: command not found\
+MacBook-Pro:~ morgancordray$ homebrew --version\
+-bash: homebrew: command not found\
+MacBook-Pro:~ morgancordray$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"\
+
+\f1\b \cf3 ==>\cf2  You are using macOS 10.11.
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  We (and Apple) do not provide support for this old version.
+\f0\b0 \
+This installation may not succeed.\
+After installation, you will encounter build failures and other breakages.\
+Please create pull requests instead of asking for help on Homebrew's\
+GitHub, Discourse, Twitter or IRC. As you are running this old version,\
+you are responsible for resolving any issues you experience.\
+\
+
+\f1\b \cf3 ==>\cf2  This script will install:
+\f0\b0 \
+/usr/local/bin/brew\
+/usr/local/share/doc/homebrew\
+/usr/local/share/man/man1/brew.1\
+/usr/local/share/zsh/site-functions/_brew\
+/usr/local/etc/bash_completion.d/brew\
+/usr/local/Homebrew\
+
+\f1\b \cf3 ==>\cf2  The following existing directories will be made group writable:
+\f0\b0 \
+/usr/local/bin\
+/usr/local/include\
+/usr/local/lib\
+/usr/local/share\
+/usr/local/lib/pkgconfig\
+/usr/local/share/info\
+/usr/local/share/man\
+/usr/local/share/man/man1\
+/usr/local/share/man/man3\
+/usr/local/share/man/man5\
+
+\f1\b \cf3 ==>\cf2  The following existing directories will have their owner set to \ul morgancordray
+\f0\b0 \ulnone :\
+/usr/local/bin\
+/usr/local/include\
+/usr/local/lib\
+/usr/local/share\
+/usr/local/lib/pkgconfig\
+/usr/local/share/info\
+/usr/local/share/man\
+/usr/local/share/man/man1\
+/usr/local/share/man/man3\
+/usr/local/share/man/man5\
+
+\f1\b \cf3 ==>\cf2  The following existing directories will have their group set to \ul admin
+\f0\b0 \ulnone :\
+/usr/local/bin\
+/usr/local/include\
+/usr/local/lib\
+/usr/local/share\
+/usr/local/lib/pkgconfig\
+/usr/local/share/info\
+/usr/local/share/man\
+/usr/local/share/man/man1\
+/usr/local/share/man/man3\
+/usr/local/share/man/man5\
+
+\f1\b \cf3 ==>\cf2  The following new directories will be created:
+\f0\b0 \
+/usr/local/etc\
+/usr/local/sbin\
+/usr/local/var\
+/usr/local/opt\
+/usr/local/share/zsh\
+/usr/local/share/zsh/site-functions\
+/usr/local/var/homebrew\
+/usr/local/var/homebrew/linked\
+/usr/local/Cellar\
+/usr/local/Caskroom\
+/usr/local/Homebrew\
+/usr/local/Frameworks\
+\
+Press RETURN to continue or any other key to abort\
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /bin/chmod u+rwx /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/lib/pkgconfig /usr/local/share/info /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man3 /usr/local/share/man/man5
+\f0\b0 \
+Password:\
+Sorry, try again.\
+Password:\
+Sorry, try again.\
+Password:\
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /bin/chmod g+rwx /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/lib/pkgconfig /usr/local/share/info /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man3 /usr/local/share/man/man5
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /usr/sbin/chown morgancordray /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/lib/pkgconfig /usr/local/share/info /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man3 /usr/local/share/man/man5
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /usr/bin/chgrp admin /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/lib/pkgconfig /usr/local/share/info /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man3 /usr/local/share/man/man5
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /bin/mkdir -p /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /bin/chmod g+rwx /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /bin/chmod 755 /usr/local/share/zsh /usr/local/share/zsh/site-functions
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /usr/sbin/chown morgancordray /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /usr/bin/chgrp admin /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /bin/mkdir -p /Users/morgancordray/Library/Caches/Homebrew
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /bin/chmod g+rwx /Users/morgancordray/Library/Caches/Homebrew
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  /usr/bin/sudo /usr/sbin/chown morgancordray /Users/morgancordray/Library/Caches/Homebrew
+\f0\b0 \
+
+\f1\b \cf3 ==>\cf2  Downloading and installing Homebrew...
+\f0\b0 \
+remote: Enumerating objects: 12, done.\
+remote: Counting objects: 100% (12/12), done.\
+remote: Compressing objects: 100% (12/12), done.\
+remote: Total 124764 (delta 1), reused 11 (delta 0), pack-reused 124752\
+Receiving objects: 100% (124764/124764), 29.62 MiB | 2.23 MiB/s, done.\
+Resolving deltas: 100% (91439/91439), done.\
+From https://github.com/Homebrew/brew\
+ * [new branch]      master     -> origin/master\
+ * [new tag]         0.1        -> 0.1\
+ * [new tag]         0.2        -> 0.2\
+ * [new tag]         0.3        -> 0.3\
+ * [new tag]         0.4        -> 0.4\
+ * [new tag]         0.5        -> 0.5\
+ * [new tag]         0.6        -> 0.6\
+ * [new tag]         0.7        -> 0.7\
+ * [new tag]         0.7.1      -> 0.7.1\
+ * [new tag]         0.8        -> 0.8\
+ * [new tag]         0.8.1      -> 0.8.1\
+ * [new tag]         0.9        -> 0.9\
+ * [new tag]         0.9.1      -> 0.9.1\
+ * [new tag]         0.9.2      -> 0.9.2\
+ * [new tag]         0.9.3      -> 0.9.3\
+ * [new tag]         0.9.4      -> 0.9.4\
+ * [new tag]         0.9.5      -> 0.9.5\
+ * [new tag]         0.9.8      -> 0.9.8\
+ * [new tag]         0.9.9      -> 0.9.9\
+ * [new tag]         1.0.0      -> 1.0.0\
+ * [new tag]         1.0.1      -> 1.0.1\
+ * [new tag]         1.0.2      -> 1.0.2\
+ * [new tag]         1.0.3      -> 1.0.3\
+ * [new tag]         1.0.4      -> 1.0.4\
+ * [new tag]         1.0.5      -> 1.0.5\
+ * [new tag]         1.0.6      -> 1.0.6\
+ * [new tag]         1.0.7      -> 1.0.7\
+ * [new tag]         1.0.8      -> 1.0.8\
+ * [new tag]         1.0.9      -> 1.0.9\
+ * [new tag]         1.1.0      -> 1.1.0\
+ * [new tag]         1.1.1      -> 1.1.1\
+ * [new tag]         1.1.10     -> 1.1.10\
+ * [new tag]         1.1.11     -> 1.1.11\
+ * [new tag]         1.1.12     -> 1.1.12\
+ * [new tag]         1.1.13     -> 1.1.13\
+ * [new tag]         1.1.2      -> 1.1.2\
+ * [new tag]         1.1.3      -> 1.1.3\
+ * [new tag]         1.1.4      -> 1.1.4\
+ * [new tag]         1.1.5      -> 1.1.5\
+ * [new tag]         1.1.6      -> 1.1.6\
+ * [new tag]         1.1.7      -> 1.1.7\
+ * [new tag]         1.1.8      -> 1.1.8\
+ * [new tag]         1.1.9      -> 1.1.9\
+ * [new tag]         1.2.0      -> 1.2.0\
+ * [new tag]         1.2.1      -> 1.2.1\
+ * [new tag]         1.2.2      -> 1.2.2\
+ * [new tag]         1.2.3      -> 1.2.3\
+ * [new tag]         1.2.4      -> 1.2.4\
+ * [new tag]         1.2.5      -> 1.2.5\
+ * [new tag]         1.2.6      -> 1.2.6\
+ * [new tag]         1.3.0      -> 1.3.0\
+ * [new tag]         1.3.1      -> 1.3.1\
+ * [new tag]         1.3.2      -> 1.3.2\
+ * [new tag]         1.3.3      -> 1.3.3\
+ * [new tag]         1.3.4      -> 1.3.4\
+ * [new tag]         1.3.5      -> 1.3.5\
+ * [new tag]         1.3.6      -> 1.3.6\
+ * [new tag]         1.3.7      -> 1.3.7\
+ * [new tag]         1.3.8      -> 1.3.8\
+ * [new tag]         1.3.9      -> 1.3.9\
+ * [new tag]         1.4.0      -> 1.4.0\
+ * [new tag]         1.4.1      -> 1.4.1\
+ * [new tag]         1.4.2      -> 1.4.2\
+ * [new tag]         1.4.3      -> 1.4.3\
+ * [new tag]         1.5.0      -> 1.5.0\
+ * [new tag]         1.5.1      -> 1.5.1\
+ * [new tag]         1.5.10     -> 1.5.10\
+ * [new tag]         1.5.11     -> 1.5.11\
+ * [new tag]         1.5.12     -> 1.5.12\
+ * [new tag]         1.5.13     -> 1.5.13\
+ * [new tag]         1.5.14     -> 1.5.14\
+ * [new tag]         1.5.2      -> 1.5.2\
+ * [new tag]         1.5.3      -> 1.5.3\
+ * [new tag]         1.5.4      -> 1.5.4\
+ * [new tag]         1.5.5      -> 1.5.5\
+ * [new tag]         1.5.6      -> 1.5.6\
+ * [new tag]         1.5.7      -> 1.5.7\
+ * [new tag]         1.5.8      -> 1.5.8\
+ * [new tag]         1.5.9      -> 1.5.9\
+ * [new tag]         1.6.0      -> 1.6.0\
+ * [new tag]         1.6.1      -> 1.6.1\
+ * [new tag]         1.6.10     -> 1.6.10\
+ * [new tag]         1.6.11     -> 1.6.11\
+ * [new tag]         1.6.12     -> 1.6.12\
+ * [new tag]         1.6.13     -> 1.6.13\
+ * [new tag]         1.6.14     -> 1.6.14\
+ * [new tag]         1.6.15     -> 1.6.15\
+ * [new tag]         1.6.16     -> 1.6.16\
+ * [new tag]         1.6.17     -> 1.6.17\
+ * [new tag]         1.6.2      -> 1.6.2\
+ * [new tag]         1.6.3      -> 1.6.3\
+ * [new tag]         1.6.4      -> 1.6.4\
+ * [new tag]         1.6.5      -> 1.6.5\
+ * [new tag]         1.6.6      -> 1.6.6\
+ * [new tag]         1.6.7      -> 1.6.7\
+ * [new tag]         1.6.8      -> 1.6.8\
+ * [new tag]         1.6.9      -> 1.6.9\
+ * [new tag]         1.7.0      -> 1.7.0\
+ * [new tag]         1.7.1      -> 1.7.1\
+ * [new tag]         1.7.2      -> 1.7.2\
+ * [new tag]         1.7.3      -> 1.7.3\
+ * [new tag]         1.7.4      -> 1.7.4\
+ * [new tag]         1.7.5      -> 1.7.5\
+ * [new tag]         1.7.6      -> 1.7.6\
+ * [new tag]         1.7.7      -> 1.7.7\
+ * [new tag]         1.8.0      -> 1.8.0\
+ * [new tag]         1.8.1      -> 1.8.1\
+ * [new tag]         1.8.2      -> 1.8.2\
+ * [new tag]         1.8.3      -> 1.8.3\
+ * [new tag]         1.8.4      -> 1.8.4\
+ * [new tag]         1.8.5      -> 1.8.5\
+ * [new tag]         1.8.6      -> 1.8.6\
+ * [new tag]         1.9.0      -> 1.9.0\
+ * [new tag]         1.9.1      -> 1.9.1\
+ * [new tag]         1.9.2      -> 1.9.2\
+ * [new tag]         1.9.3      -> 1.9.3\
+ * [new tag]         2.0.0      -> 2.0.0\
+ * [new tag]         2.0.1      -> 2.0.1\
+ * [new tag]         2.0.2      -> 2.0.2\
+ * [new tag]         2.0.3      -> 2.0.3\
+ * [new tag]         2.0.4      -> 2.0.4\
+ * [new tag]         2.0.5      -> 2.0.5\
+ * [new tag]         2.0.6      -> 2.0.6\
+ * [new tag]         2.1.0      -> 2.1.0\
+ * [new tag]         2.1.1      -> 2.1.1\
+ * [new tag]         2.1.2      -> 2.1.2\
+ * [new tag]         2.1.3      -> 2.1.3\
+ * [new tag]         2.1.4      -> 2.1.4\
+ * [new tag]         2.1.5      -> 2.1.5\
+ * [new tag]         2.1.6      -> 2.1.6\
+ * [new tag]         2.1.7      -> 2.1.7\
+HEAD is now at 203980a Merge pull request #6309 from Homebrew/dependabot/bundler/docs/html-pipeline-2.11.1\
+/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby: warning: unknown argument for --enable: `frozen-string-literal'\
+/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby: warning: unknown argument for --disable: `did_you_mean'\
+==> Downloading https://homebrew.bintray.com/bottles-portable-ruby/portable-ruby-2.3.7.mavericks.bottle.tar.gz\
+######################################################################## 100.0%\
+==> Pouring portable-ruby-2.3.7.mavericks.bottle.tar.gz\
+\cf3 ==>\cf2  
+\f1\b Homebrew is run entirely by unpaid volunteers. Please consider donating:
+\f0\b0 \
+  \ul https://github.com/Homebrew/brew#donations\ulnone \
+\cf3 ==>\cf2  
+\f1\b Tapping homebrew/core
+\f0\b0 \
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core'...\
+remote: Enumerating objects: 5028, done.\
+remote: Counting objects: 100% (5028/5028), done.\
+remote: Compressing objects: 100% (4813/4813), done.\
+remote: Total 5028 (delta 50), reused 832 (delta 24), pack-reused 0\
+Receiving objects: 100% (5028/5028), 4.02 MiB | 2.49 MiB/s, done.\
+Resolving deltas: 100% (50/50), done.\
+Checking connectivity... done.\
+Tapped 2 commands and 4816 formulae (5,069 files, 12.5MB).\
+Already up-to-date.\
+
+\f1\b \cf3 ==>\cf2  Installation successful!
+\f0\b0 \
+\
+
+\f1\b \cf3 ==>\cf2  Homebrew has enabled anonymous aggregate formulae and cask analytics.
+\f0\b0 \
+
+\f1\b Read the analytics documentation (and how to opt-out) here:
+\f0\b0 \
+
+\f1\b   \ul https://docs.brew.sh/Analytics
+\f0\b0 \ulnone \
+\
+
+\f1\b \cf3 ==>\cf2  Homebrew is run entirely by unpaid volunteers. Please consider donating:
+\f0\b0 \
+  \ul https://github.com/Homebrew/brew#donations\ulnone \
+
+\f1\b \cf3 ==>\cf2  Next steps:
+\f0\b0 \
+- Run `brew help` to get started\
+- Further documentation: \
+    \ul https://docs.brew.sh\ulnone \
+MacBook-Pro:~ morgancordray$ brew install python3\
+\cf4 Warning:\cf2  You are using macOS 10.11.\
+We (and Apple) do not provide support for this old version.\
+You will encounter build failures with some formulae.\
+Please create pull requests instead of asking for help on Homebrew's GitHub,\
+Discourse, Twitter or IRC. You are responsible for resolving any issues you\
+experience, as you are running this old version.\
+\
+\cf4 Warning:\cf2  Your Xcode (6.4) is outdated.\
+Please update to Xcode 8.2.1 (or delete it).\
+Xcode can be updated from the App Store.\
+\
+\cf5 ==>\cf2  
+\f1\b Installing dependencies for git: \cf5 gettext\cf2  and \cf5 pcre2
+\f0\b0 \cf2 \
+\cf5 ==>\cf2  
+\f1\b Installing git dependency: \cf5 gettext
+\f0\b0 \cf2 \
+\cf4 Warning:\cf2  Your Xcode (6.4) is outdated.\
+Please update to Xcode 8.2.1 (or delete it).\
+Xcode can be updated from the App Store.\
+\
+Updating Homebrew...\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ftp.gnu.org/gnu/gettext/gettext-0.20.1.tar.xz
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b ./configure --disable-silent-rules --prefix=/usr/local/Cellar/gettext/0.20.1
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make install
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+gettext is keg-only, which means it was not symlinked into /usr/local,\
+because macOS provides the BSD gettext library & some software gets confused if both are in the library path.\
+\
+If you need to have gettext first in your PATH run:\
+  echo 'export PATH="/usr/local/opt/gettext/bin:$PATH"' >> ~/.bash_profile\
+\
+For compilers to find gettext you may need to set:\
+  export LDFLAGS="-L/usr/local/opt/gettext/lib"\
+  export CPPFLAGS="-I/usr/local/opt/gettext/include"\
+\
+\cf3 ==>\cf2  
+\f1\b Summary
+\f0\b0 \
+
+\f2 \uc0\u55356 \u57210 
+\f0   /usr/local/Cellar/gettext/0.20.1: 1,899 files, 18.7MB, built in 9 minutes 43 seconds\
+\cf5 ==>\cf2  
+\f1\b Installing git dependency: \cf5 pcre2
+\f0\b0 \cf2 \
+\cf4 Warning:\cf2  Your Xcode (6.4) is outdated.\
+Please update to Xcode 8.2.1 (or delete it).\
+Xcode can be updated from the App Store.\
+\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ftp.pcre.org/pub/pcre/pcre2-10.33.tar.bz2
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b ./configure --prefix=/usr/local/Cellar/pcre2/10.33 --enable-pcre2-16 --enabl
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make install
+\f0\b0 \
+
+\f2 \uc0\u55356 \u57210 
+\f0   /usr/local/Cellar/pcre2/10.33: 226 files, 5.8MB, built in 1 minute 6 seconds\
+\cf5 ==>\cf2  
+\f1\b Installing \cf5 git
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://www.kernel.org/pub/software/scm/git/git-2.22.0.tar.xz
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Downloading from https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b make install prefix=/usr/local/Cellar/git/2.22.0_1 sysconfdir=/usr/local/etc
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make CC=clang CFLAGS= LDFLAGS=
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make clean
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make test
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make CC=clang CFLAGS= LDFLAGS=
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://www.kernel.org/pub/software/scm/git/git-manpages-2.22.0.
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Downloading from https://mirrors.edge.kernel.org/pub/software/scm/git/git-ma
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.22.0.
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Downloading from https://mirrors.edge.kernel.org/pub/software/scm/git/git-ht
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Net-SMTP-SSL-1.04
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+Bash completion has been installed to:\
+  /usr/local/etc/bash_completion.d\
+\
+zsh completions and functions have been installed to:\
+  /usr/local/share/zsh/site-functions\
+\
+Emacs Lisp files have been installed to:\
+  /usr/local/share/emacs/site-lisp/git\
+\cf3 ==>\cf2  
+\f1\b Summary
+\f0\b0 \
+
+\f2 \uc0\u55356 \u57210 
+\f0   /usr/local/Cellar/git/2.22.0_1: 1,530 files, 44.3MB, built in 1 minute 25 seconds\
+\cf3 ==>\cf2  
+\f1\b `brew cleanup` has not been run in 30 days, running now...
+\f0\b0 \
+\cf5 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b gettext
+\f0\b0 \
+gettext is keg-only, which means it was not symlinked into /usr/local,\
+because macOS provides the BSD gettext library & some software gets confused if both are in the library path.\
+\
+If you need to have gettext first in your PATH run:\
+  echo 'export PATH="/usr/local/opt/gettext/bin:$PATH"' >> ~/.bash_profile\
+\
+For compilers to find gettext you may need to set:\
+  export LDFLAGS="-L/usr/local/opt/gettext/lib"\
+  export CPPFLAGS="-I/usr/local/opt/gettext/include"\
+\
+\cf3 ==>\cf2  
+\f1\b git
+\f0\b0 \
+Bash completion has been installed to:\
+  /usr/local/etc/bash_completion.d\
+\
+zsh completions and functions have been installed to:\
+  /usr/local/share/zsh/site-functions\
+\
+Emacs Lisp files have been installed to:\
+  /usr/local/share/emacs/site-lisp/git\
+\cf4 Warning:\cf2  You are using macOS 10.11.\
+We (and Apple) do not provide support for this old version.\
+You will encounter build failures with some formulae.\
+Please create pull requests instead of asking for help on Homebrew's GitHub,\
+Discourse, Twitter or IRC. You are responsible for resolving any issues you\
+experience, as you are running this old version.\
+\
+\cf4 Warning:\cf2  Your Xcode (6.4) is outdated.\
+Please update to Xcode 8.2.1 (or delete it).\
+Xcode can be updated from the App Store.\
+\
+\cf5 ==>\cf2  
+\f1\b Installing dependencies for python: \cf5 pkg-config\cf2 , \cf5 gdbm\cf2 , \cf5 openssl\cf2 , \cf5 readline\cf2 , \cf5 sqlite\cf2  and \cf5 xz
+\f0\b0 \cf2 \
+\cf5 ==>\cf2  
+\f1\b Installing python dependency: \cf5 pkg-config
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://homebrew.bintray.com/bottles/pkg-config-0.29.2.el_capita
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Downloading from https://akamai.bintray.com/93/93f044f166bcbd84db14133ee4f56
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b Pouring pkg-config-0.29.2.el_capitan.bottle.tar.gz
+\f0\b0 \
+
+\f2 \uc0\u55356 \u57210 
+\f0   /usr/local/Cellar/pkg-config/0.29.2: 11 files, 627KB\
+\cf5 ==>\cf2  
+\f1\b Installing python dependency: \cf5 gdbm
+\f0\b0 \cf2 \
+\cf4 Warning:\cf2  Your Xcode (6.4) is outdated.\
+Please update to Xcode 8.2.1 (or delete it).\
+Xcode can be updated from the App Store.\
+\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ftp.gnu.org/gnu/gdbm/gdbm-1.18.1.tar.gz
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b ./configure --disable-silent-rules --without-readline --prefix=/usr/local/Ce
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make install
+\f0\b0 \
+
+\f2 \uc0\u55356 \u57210 
+\f0   /usr/local/Cellar/gdbm/1.18.1: 20 files, 594KB, built in 21 seconds\
+\cf5 ==>\cf2  
+\f1\b Installing python dependency: \cf5 openssl
+\f0\b0 \cf2 \
+\cf4 Warning:\cf2  Your Xcode (6.4) is outdated.\
+Please update to Xcode 8.2.1 (or delete it).\
+Xcode can be updated from the App Store.\
+\
+\cf3 ==>\cf2  
+\f1\b Downloading https://www.openssl.org/source/openssl-1.0.2s.tar.gz
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b perl ./Configure --prefix=/usr/local/Cellar/openssl/1.0.2s --openssldir=/usr
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make depend
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make test
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b make install MANDIR=/usr/local/Cellar/openssl/1.0.2s/share/man MANSUFFIX=ssl
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+A CA file has been bootstrapped using certificates from the SystemRoots\
+keychain. To add additional certificates (e.g. the certificates added in\
+the System keychain), place .pem files in\
+  /usr/local/etc/openssl/certs\
+\
+and run\
+  /usr/local/opt/openssl/bin/c_rehash\
+\
+openssl is keg-only, which means it was not symlinked into /usr/local,\
+because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.\
+\
+If you need to have openssl first in your PATH run:\
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile\
+\
+For compilers to find openssl you may need to set:\
+  export LDFLAGS="-L/usr/local/opt/openssl/lib"\
+  export CPPFLAGS="-I/usr/local/opt/openssl/include"\
+\
+For pkg-config to find openssl you may need to set:\
+  export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"\
+\
+\cf3 ==>\cf2  
+\f1\b Summary
+\f0\b0 \
+
+\f2 \uc0\u55356 \u57210 
+\f0   /usr/local/Cellar/openssl/1.0.2s: 1,787 files, 12.3MB, built in 6 minutes 29 seconds\
+\cf5 ==>\cf2  
+\f1\b Installing python dependency: \cf5 readline
+\f0\b0 \cf2 \
+\cf4 Warning:\cf2  Your Xcode (6.4) is outdated.\
+Please update to Xcode 8.2.1 (or delete it).\
+Xcode can be updated from the App Store.\
+\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ftp.gnu.org/gnu/readline/readline-8.0.tar.gz
+\f0\b0 \
+\
+curl: (28) Connection timed out after 5001 milliseconds\
+Trying a mirror...\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ftpmirror.gnu.org/readline/readline-8.0.tar.gz
+\f0\b0 \
+\
+curl: (28) Connection timed out after 5000 milliseconds\
+\cf6 Error:\cf2  An exception occurred within a child process:\
+  DownloadError: Failed to download resource "readline"\
+Download failed: https://ftpmirror.gnu.org/readline/readline-8.0.tar.gz\
+\
+MacBook-Pro:~ morgancordray$ brew install python3\
+\cf4 Warning:\cf2  You are using macOS 10.11.\
+We (and Apple) do not provide support for this old version.\
+You will encounter build failures with some formulae.\
+Please create pull requests instead of asking for help on Homebrew's GitHub,\
+Discourse, Twitter or IRC. You are responsible for resolving any issues you\
+experience, as you are running this old version.\
+\
+\cf4 Warning:\cf2  Your Xcode (6.4) is outdated.\
+Please update to Xcode 8.2.1 (or delete it).\
+Xcode can be updated from the App Store.\
+\
+\cf5 ==>\cf2  
+\f1\b Installing dependencies for python: \cf5 readline\cf2 , \cf5 sqlite\cf2  and \cf5 xz
+\f0\b0 \cf2 \
+\cf5 ==>\cf2  
+\f1\b Installing python dependency: \cf5 readline
+\f0\b0 \cf2 \
+\cf4 Warning:\cf2  Your Xcode (6.4) is outdated.\
+Please update to Xcode 8.2.1 (or delete it).\
+Xcode can be updated from the App Store.\
+\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ftp.gnu.org/gnu/readline/readline-8.0.tar.gz
+\f0\b0 \
+\
+curl: (28) Connection timed out after 5003 milliseconds\
+Trying a mirror...\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ftpmirror.gnu.org/readline/readline-8.0.tar.gz
+\f0\b0 \
+\
+curl: (28) Connection timed out after 5003 milliseconds\
+\cf6 Error:\cf2  An exception occurred within a child process:\
+  DownloadError: Failed to download resource "readline"\
+Download failed: https://ftpmirror.gnu.org/readline/readline-8.0.tar.gz\
+\
+MacBook-Pro:~ morgancordray$ install xcode\
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]\
+               [-o owner] file1 file2\
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]\
+               [-o owner] file1 ... fileN directory\
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...\
+MacBook-Pro:~ morgancordray$ \
+\cf7 \cb8   [Restored Jul 18, 2019 at 9:11:09 PM]\cf2 \
+\cb1 Last login: Thu Jul 18 21:11:09 on ttys000\
+Restored session: Thu Jul 18 17:39:03 MST 2019\
+xcrun: error: unable to locate xcodebuild, please make sure the path to the Xcode folder is set correctly!\
+xcrun: error: You can set the path to the Xcode folder using /usr/bin/xcode-select -switch\
+MacBook-Pro:~ morgancordray$ bre install python3\
+-bash: bre: command not found\
+MacBook-Pro:~ morgancordray$ brew install python3\
+clang: error: unable to locate xcodebuild, please make sure the path to the Xcode folder is set correctly!\
+clang: error: You can set the path to the Xcode folder using /usr/bin/xcode-select -switch\
+\cf6 Error:\cf2  Your Xcode (dunno) is too outdated.\
+Please update to Xcode 10.2.1 (or delete it).\
+Xcode can be updated from the App Store.\
+\
+\cf6 Error:\cf2  Xcode alone is not sufficient on Mojave.\
+Install the Command Line Tools:\
+  xcode-select --install\
+\
+MacBook-Pro:~ morgancordray$ brew install python3\
+\cf6 \ul \ulc6 Error\cf2 \ulnone : You have not agreed to the Xcode license. Please resolve this by running:\
+  sudo xcodebuild -license accept\
+MacBook-Pro:~ morgancordray$ sudo xcodebuild -license accept\
+Password:\
+MacBook-Pro:~ morgancordray$ brew install python3\
+\cf6 Error:\cf2  Xcode alone is not sufficient on Mojave.\
+Install the Command Line Tools:\
+  xcode-select --install\
+\
+MacBook-Pro:~ morgancordray$ xcode-select --install\
+xcode-select: note: install requested for command line developer tools\
+MacBook-Pro:~ morgancordray$ brew install python3\
+\cf5 ==>\cf2  
+\f1\b Installing dependencies for python: \cf5 readline\cf2 , \cf5 sqlite\cf2  and \cf5 xz
+\f0\b0 \cf2 \
+\cf5 ==>\cf2  
+\f1\b Installing python dependency: \cf5 readline
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://homebrew.bintray.com/bottles/readline-8.0.0_1.mojave.bot
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Downloading from https://akamai.bintray.com/fa/faab004773e6449dd97971311cb62
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b Pouring readline-8.0.0_1.mojave.bottle.tar.gz
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+readline is keg-only, which means it was not symlinked into /usr/local,\
+because macOS provides the BSD libedit library, which shadows libreadline.\
+In order to prevent conflicts when programs look for libreadline we are\
+defaulting this GNU Readline installation to keg-only.\
+\
+For compilers to find readline you may need to set:\
+  export LDFLAGS="-L/usr/local/opt/readline/lib"\
+  export CPPFLAGS="-I/usr/local/opt/readline/include"\
+\
+For pkg-config to find readline you may need to set:\
+  export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"\
+\
+\cf3 ==>\cf2  
+\f1\b Summary
+\f0\b0 \
+
+\f2 \uc0\u55356 \u57210 
+\f0   /usr/local/Cellar/readline/8.0.0_1: 48 files, 1.5MB\
+\cf5 ==>\cf2  
+\f1\b Installing python dependency: \cf5 sqlite
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://homebrew.bintray.com/bottles/sqlite-3.28.0.mojave.bottle
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Downloading from https://akamai.bintray.com/e3/e360850758d2104b4ae9eab8ae579
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b Pouring sqlite-3.28.0.mojave.bottle.tar.gz
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+sqlite is keg-only, which means it was not symlinked into /usr/local,\
+because macOS provides an older sqlite3.\
+\
+If you need to have sqlite first in your PATH run:\
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.bash_profile\
+\
+For compilers to find sqlite you may need to set:\
+  export LDFLAGS="-L/usr/local/opt/sqlite/lib"\
+  export CPPFLAGS="-I/usr/local/opt/sqlite/include"\
+\
+For pkg-config to find sqlite you may need to set:\
+  export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"\
+\
+\cf3 ==>\cf2  
+\f1\b Summary
+\f0\b0 \
+
+\f2 \uc0\u55356 \u57210 
+\f0   /usr/local/Cellar/sqlite/3.28.0: 11 files, 3.7MB\
+\cf5 ==>\cf2  
+\f1\b Installing python dependency: \cf5 xz
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://homebrew.bintray.com/bottles/xz-5.2.4.mojave.bottle.tar.
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Downloading from https://akamai.bintray.com/01/010667293df282c8bceede3bcd369
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b Pouring xz-5.2.4.mojave.bottle.tar.gz
+\f0\b0 \
+
+\f2 \uc0\u55356 \u57210 
+\f0   /usr/local/Cellar/xz/5.2.4: 92 files, 1MB\
+\cf5 ==>\cf2  
+\f1\b Installing \cf5 python
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://homebrew.bintray.com/bottles/python-3.7.4.mojave.bottle.
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Downloading from https://akamai.bintray.com/81/81fc6e5914a16387bd09387ce08e9
+\f0\b0 \
+######################################################################## 100.0%\
+\cf3 ==>\cf2  
+\f1\b Pouring python-3.7.4.mojave.bottle.tar.gz
+\f0\b0 \
+\cf6 Error:\cf2  An unexpected error occurred during the `brew link` step\
+The formula built, but is not symlinked into /usr/local\
+Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+\cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ brew rm python; rm -rf /usr/local/opt/python; brew prune; brew install python\
+Uninstalling /usr/local/Cellar/python/3.7.4... (3,212 files, 51.2MB)\
+\cf6 Error:\cf2  Unknown command: prune\
+\cf3 ==>\cf2  
+\f1\b Downloading https://homebrew.bintray.com/bottles/python-3.7.4.mojave.bottle.
+\f0\b0 \
+Already downloaded: /Users/morgancordray/Library/Caches/Homebrew/downloads/ffcfe300e2ad205387a2bdd27185d98d64621578d26d2f6ccbbcd091ff799fc8--python-3.7.4.mojave.bottle.tar.gz\
+\cf3 ==>\cf2  
+\f1\b Pouring python-3.7.4.mojave.bottle.tar.gz
+\f0\b0 \
+\cf6 Error:\cf2  An unexpected error occurred during the `brew link` step\
+The formula built, but is not symlinked into /usr/local\
+Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+\cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ brew install python3\
+\cf4 Warning:\cf2  python 3.7.4 is already installed, it's just not linked\
+You can use `brew link python` to link this version.\
+MacBook-Pro:~ morgancordray$ brew link python\
+Linking /usr/local/Cellar/python/3.7.4... \cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ sudo chown -R "$USER":admin /usr/local\
+Password:\
+chown: /usr/local: Operation not permitted\
+MacBook-Pro:~ morgancordray$ sudo chown -R "$USER":admin /Library/Caches/Homebrew\
+chown: /Library/Caches/Homebrew: No such file or directory\
+MacBook-Pro:~ morgancordray$ sudo chown -R "$USER":admin /Library/Caches/Homebrew\
+chown: /Library/Caches/Homebrew: No such file or directory\
+MacBook-Pro:~ morgancordray$ python --version\
+Python 2.7.15 :: Anaconda, Inc.\
+MacBook-Pro:~ morgancordray$ brew link python\
+Linking /usr/local/Cellar/python/3.7.4... \cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ sudo chown -R $(whoami) $(brew --prefix)/*\
+MacBook-Pro:~ morgancordray$ brew link python\
+Linking /usr/local/Cellar/python/3.7.4... \cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ brew doctor\
+
+\f1\b Please note that these warnings are just used to help the Homebrew maintainers
+\f0\b0 \
+
+\f1\b with debugging if you file an issue. If everything you use Homebrew for is
+\f0\b0 \
+
+\f1\b working fine: please don't worry or file an issue; just ignore this. Thanks!
+\f0\b0 \
+\
+\cf4 Warning:\cf2  The following directories do not exist:\
+/usr/local/sbin\
+\
+You should create these directories and change their ownership to your account.\
+  sudo mkdir -p /usr/local/sbin\
+  sudo chown -R $(whoami) /usr/local/sbin\
+\
+\cf4 Warning:\cf2  "config" scripts exist outside your system or Homebrew directories.\
+`./configure` scripts often look for *-config scripts to determine if\
+software packages are installed, and which additional flags to use when\
+compiling and linking.\
+\
+Having additional scripts in your path can confuse software installed via\
+Homebrew if the config script overrides a system or Homebrew-provided\
+script of the same name. We found the following "config" scripts:\
+  /Users/morgancordray/anaconda2/bin/llvm-config\
+  /Users/morgancordray/anaconda2/bin/python2-config\
+  /Users/morgancordray/anaconda2/bin/icu-config\
+  /Users/morgancordray/anaconda2/bin/krb5-config\
+  /Users/morgancordray/anaconda2/bin/freetype-config\
+  /Users/morgancordray/anaconda2/bin/xslt-config\
+  /Users/morgancordray/anaconda2/bin/libpng16-config\
+  /Users/morgancordray/anaconda2/bin/python2.7-config\
+  /Users/morgancordray/anaconda2/bin/libpng-config\
+  /Users/morgancordray/anaconda2/bin/xml2-config\
+  /Users/morgancordray/anaconda2/bin/python-config\
+  /Users/morgancordray/anaconda2/bin/gsl-config\
+  /Users/morgancordray/anaconda2/bin/curl-config\
+  /Users/morgancordray/anaconda2/bin/ncursesw6-config\
+  /Users/morgancordray/anaconda2/bin/pcre-config\
+  /Users/morgancordray/anaconda/bin/libdynd-config\
+  /Users/morgancordray/anaconda/bin/python2-config\
+  /Users/morgancordray/anaconda/bin/icu-config\
+  /Users/morgancordray/anaconda/bin/freetype-config\
+  /Users/morgancordray/anaconda/bin/xslt-config\
+  /Users/morgancordray/anaconda/bin/libpng16-config\
+  /Users/morgancordray/anaconda/bin/python2.7-config\
+  /Users/morgancordray/anaconda/bin/libpng-config\
+  /Users/morgancordray/anaconda/bin/xml2-config\
+  /Users/morgancordray/anaconda/bin/python-config\
+  /Users/morgancordray/anaconda/bin/curl-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/python2-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/python2.7-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/python-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/wx-config\
+  //anaconda/bin/libdynd-config\
+  //anaconda/bin/llvm-config\
+  //anaconda/bin/python2-config\
+  //anaconda/bin/freetype-config\
+  //anaconda/bin/xslt-config\
+  //anaconda/bin/python2.7-config\
+  //anaconda/bin/libpng-config\
+  //anaconda/bin/xml2-config\
+  //anaconda/bin/python-config\
+  //anaconda/bin/curl-config\
+  //anaconda/bin/nc-config\
+  //anaconda/bin/libpng15-config\
+  /Library/Frameworks/Python.framework/Versions/3.3/bin/python3.3-config\
+  /Library/Frameworks/Python.framework/Versions/3.3/bin/python3-config\
+  /Library/Frameworks/Python.framework/Versions/3.3/bin/python3.3m-config\
+\
+\cf4 Warning:\cf2  Unbrewed dylibs were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected dylibs:\
+  /usr/local/lib/libtcl8.6.dylib\
+  /usr/local/lib/libtk8.6.dylib\
+\
+\cf4 Warning:\cf2  Unbrewed header files were found in /usr/local/include.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected header files:\
+  /usr/local/include/fakemysql.h\
+  /usr/local/include/fakepq.h\
+  /usr/local/include/fakesql.h\
+  /usr/local/include/itcl.h\
+  /usr/local/include/itcl2TclOO.h\
+  /usr/local/include/itclDecls.h\
+  /usr/local/include/itclInt.h\
+  /usr/local/include/itclIntDecls.h\
+  /usr/local/include/itclMigrate2TclCore.h\
+  /usr/local/include/itclTclIntStubsFcn.h\
+  /usr/local/include/mysqlStubs.h\
+  /usr/local/include/odbcStubs.h\
+  /usr/local/include/pqStubs.h\
+  /usr/local/include/tcl.h\
+  /usr/local/include/tclDecls.h\
+  /usr/local/include/tclOO.h\
+  /usr/local/include/tclOODecls.h\
+  /usr/local/include/tclPlatDecls.h\
+  /usr/local/include/tclThread.h\
+  /usr/local/include/tclTomMath.h\
+  /usr/local/include/tclTomMathDecls.h\
+  /usr/local/include/tdbc.h\
+  /usr/local/include/tdbcDecls.h\
+  /usr/local/include/tdbcInt.h\
+  /usr/local/include/tk.h\
+  /usr/local/include/tkDecls.h\
+  /usr/local/include/tkPlatDecls.h\
+\
+\cf4 Warning:\cf2  Unbrewed .pc files were found in /usr/local/lib/pkgconfig.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected .pc files:\
+  /usr/local/lib/pkgconfig/tcl.pc\
+  /usr/local/lib/pkgconfig/tk.pc\
+\
+\cf4 Warning:\cf2  Unbrewed static libraries were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected static libraries:\
+  /usr/local/lib/libtclstub8.6.a\
+  /usr/local/lib/libtkstub8.6.a\
+\
+\cf4 Warning:\cf2  You have unlinked kegs in your Cellar.\
+Leaving kegs unlinked can lead to build-trouble and cause brews that depend on\
+those kegs to fail to run properly once built. Run `brew link` on these:\
+  python\
+MacBook-Pro:~ morgancordray$ sudo mkdir -p /usr/local/sbin\
+Password:\
+MacBook-Pro:~ morgancordray$ sudo chown -R $(whoami) /usr/local/sbin\
+MacBook-Pro:~ morgancordray$ brew link python3\
+Linking /usr/local/Cellar/python/3.7.4... \cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ brew doctor\
+
+\f1\b Please note that these warnings are just used to help the Homebrew maintainers
+\f0\b0 \
+
+\f1\b with debugging if you file an issue. If everything you use Homebrew for is
+\f0\b0 \
+
+\f1\b working fine: please don't worry or file an issue; just ignore this. Thanks!
+\f0\b0 \
+\
+\cf4 Warning:\cf2  "config" scripts exist outside your system or Homebrew directories.\
+`./configure` scripts often look for *-config scripts to determine if\
+software packages are installed, and which additional flags to use when\
+compiling and linking.\
+\
+Having additional scripts in your path can confuse software installed via\
+Homebrew if the config script overrides a system or Homebrew-provided\
+script of the same name. We found the following "config" scripts:\
+  /Users/morgancordray/anaconda2/bin/llvm-config\
+  /Users/morgancordray/anaconda2/bin/python2-config\
+  /Users/morgancordray/anaconda2/bin/icu-config\
+  /Users/morgancordray/anaconda2/bin/krb5-config\
+  /Users/morgancordray/anaconda2/bin/freetype-config\
+  /Users/morgancordray/anaconda2/bin/xslt-config\
+  /Users/morgancordray/anaconda2/bin/libpng16-config\
+  /Users/morgancordray/anaconda2/bin/python2.7-config\
+  /Users/morgancordray/anaconda2/bin/libpng-config\
+  /Users/morgancordray/anaconda2/bin/xml2-config\
+  /Users/morgancordray/anaconda2/bin/python-config\
+  /Users/morgancordray/anaconda2/bin/gsl-config\
+  /Users/morgancordray/anaconda2/bin/curl-config\
+  /Users/morgancordray/anaconda2/bin/ncursesw6-config\
+  /Users/morgancordray/anaconda2/bin/pcre-config\
+  /Users/morgancordray/anaconda/bin/libdynd-config\
+  /Users/morgancordray/anaconda/bin/python2-config\
+  /Users/morgancordray/anaconda/bin/icu-config\
+  /Users/morgancordray/anaconda/bin/freetype-config\
+  /Users/morgancordray/anaconda/bin/xslt-config\
+  /Users/morgancordray/anaconda/bin/libpng16-config\
+  /Users/morgancordray/anaconda/bin/python2.7-config\
+  /Users/morgancordray/anaconda/bin/libpng-config\
+  /Users/morgancordray/anaconda/bin/xml2-config\
+  /Users/morgancordray/anaconda/bin/python-config\
+  /Users/morgancordray/anaconda/bin/curl-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/python2-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/python2.7-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/python-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/wx-config\
+  //anaconda/bin/libdynd-config\
+  //anaconda/bin/llvm-config\
+  //anaconda/bin/python2-config\
+  //anaconda/bin/freetype-config\
+  //anaconda/bin/xslt-config\
+  //anaconda/bin/python2.7-config\
+  //anaconda/bin/libpng-config\
+  //anaconda/bin/xml2-config\
+  //anaconda/bin/python-config\
+  //anaconda/bin/curl-config\
+  //anaconda/bin/nc-config\
+  //anaconda/bin/libpng15-config\
+  /Library/Frameworks/Python.framework/Versions/3.3/bin/python3.3-config\
+  /Library/Frameworks/Python.framework/Versions/3.3/bin/python3-config\
+  /Library/Frameworks/Python.framework/Versions/3.3/bin/python3.3m-config\
+\
+\cf4 Warning:\cf2  Unbrewed dylibs were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected dylibs:\
+  /usr/local/lib/libtcl8.6.dylib\
+  /usr/local/lib/libtk8.6.dylib\
+\
+\cf4 Warning:\cf2  Unbrewed header files were found in /usr/local/include.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected header files:\
+  /usr/local/include/fakemysql.h\
+  /usr/local/include/fakepq.h\
+  /usr/local/include/fakesql.h\
+  /usr/local/include/itcl.h\
+  /usr/local/include/itcl2TclOO.h\
+  /usr/local/include/itclDecls.h\
+  /usr/local/include/itclInt.h\
+  /usr/local/include/itclIntDecls.h\
+  /usr/local/include/itclMigrate2TclCore.h\
+  /usr/local/include/itclTclIntStubsFcn.h\
+  /usr/local/include/mysqlStubs.h\
+  /usr/local/include/odbcStubs.h\
+  /usr/local/include/pqStubs.h\
+  /usr/local/include/tcl.h\
+  /usr/local/include/tclDecls.h\
+  /usr/local/include/tclOO.h\
+  /usr/local/include/tclOODecls.h\
+  /usr/local/include/tclPlatDecls.h\
+  /usr/local/include/tclThread.h\
+  /usr/local/include/tclTomMath.h\
+  /usr/local/include/tclTomMathDecls.h\
+  /usr/local/include/tdbc.h\
+  /usr/local/include/tdbcDecls.h\
+  /usr/local/include/tdbcInt.h\
+  /usr/local/include/tk.h\
+  /usr/local/include/tkDecls.h\
+  /usr/local/include/tkPlatDecls.h\
+\
+\cf4 Warning:\cf2  Unbrewed .pc files were found in /usr/local/lib/pkgconfig.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected .pc files:\
+  /usr/local/lib/pkgconfig/tcl.pc\
+  /usr/local/lib/pkgconfig/tk.pc\
+\
+\cf4 Warning:\cf2  Unbrewed static libraries were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected static libraries:\
+  /usr/local/lib/libtclstub8.6.a\
+  /usr/local/lib/libtkstub8.6.a\
+\
+\cf4 Warning:\cf2  You have unlinked kegs in your Cellar.\
+Leaving kegs unlinked can lead to build-trouble and cause brews that depend on\
+those kegs to fail to run properly once built. Run `brew link` on these:\
+  python\
+MacBook-Pro:~ morgancordray$ sudo chown -R $(whoami):admin /usr/local\
+Password:\
+chown: /usr/local: Operation not permitted\
+MacBook-Pro:~ morgancordray$ brew upgrade\
+Updating Homebrew...\
+\cf3 ==>\cf2  
+\f1\b Auto-updated Homebrew!
+\f0\b0 \
+Updated 1 tap (homebrew/core).\
+\cf3 ==>\cf2  
+\f1\b Updated Formulae
+\f0\b0 \
+abcmidi             curl-openssl        flawfinder          monero\
+ack                 deark               fn                  netlify-cli\
+ask-cli             doctl               fossil              presto\
+awscli              dovecot             freediameter        serverless\
+bacula-fd           drone-cli           geoserver           swift-protobuf\
+balena-cli          eiffelstudio        glooctl             swiftlint\
+btfs                ejabberd            hub                 thors-serializer\
+byacc               elixir              lolcat\
+cpl                 exploitdb           mercurial\
+curl                flashrom            mesos\
+\
+MacBook-Pro:~ morgancordray$ brew cleanup\
+Pruned 0 symbolic links and 5 directories from /usr/local\
+MacBook-Pro:~ morgancordray$ brew link python3\
+/usr/local/Homebrew/Library/Homebrew/global.rb:12:in `require': cannot load such file -- active_support/core_ext/object/blank (LoadError)\
+	from /usr/local/Homebrew/Library/Homebrew/global.rb:12:in `<top (required)>'\
+	from /usr/local/Homebrew/Library/Homebrew/brew.rb:23:in `require_relative'\
+	from /usr/local/Homebrew/Library/Homebrew/brew.rb:23:in `<main>'\
+MacBook-Pro:~ morgancordray$ brew doctor\
+/usr/local/Homebrew/Library/Homebrew/global.rb:12:in `require': cannot load such file -- active_support/core_ext/object/blank (LoadError)\
+	from /usr/local/Homebrew/Library/Homebrew/global.rb:12:in `<top (required)>'\
+	from /usr/local/Homebrew/Library/Homebrew/brew.rb:23:in `require_relative'\
+	from /usr/local/Homebrew/Library/Homebrew/brew.rb:23:in `<main>'\
+MacBook-Pro:~ morgancordray$ brew update\
+To restore the stashed changes to /usr/local/Homebrew run:\
+  'cd /usr/local/Homebrew && git stash pop'\
+Already up-to-date.\
+MacBook-Pro:~ morgancordray$ brew cleanup\
+MacBook-Pro:~ morgancordray$ brew doctor\
+
+\f1\b Please note that these warnings are just used to help the Homebrew maintainers
+\f0\b0 \
+
+\f1\b with debugging if you file an issue. If everything you use Homebrew for is
+\f0\b0 \
+
+\f1\b working fine: please don't worry or file an issue; just ignore this. Thanks!
+\f0\b0 \
+\
+\cf4 Warning:\cf2  "config" scripts exist outside your system or Homebrew directories.\
+`./configure` scripts often look for *-config scripts to determine if\
+software packages are installed, and which additional flags to use when\
+compiling and linking.\
+\
+Having additional scripts in your path can confuse software installed via\
+Homebrew if the config script overrides a system or Homebrew-provided\
+script of the same name. We found the following "config" scripts:\
+  /Users/morgancordray/anaconda2/bin/llvm-config\
+  /Users/morgancordray/anaconda2/bin/python2-config\
+  /Users/morgancordray/anaconda2/bin/icu-config\
+  /Users/morgancordray/anaconda2/bin/krb5-config\
+  /Users/morgancordray/anaconda2/bin/freetype-config\
+  /Users/morgancordray/anaconda2/bin/xslt-config\
+  /Users/morgancordray/anaconda2/bin/libpng16-config\
+  /Users/morgancordray/anaconda2/bin/python2.7-config\
+  /Users/morgancordray/anaconda2/bin/libpng-config\
+  /Users/morgancordray/anaconda2/bin/xml2-config\
+  /Users/morgancordray/anaconda2/bin/python-config\
+  /Users/morgancordray/anaconda2/bin/gsl-config\
+  /Users/morgancordray/anaconda2/bin/curl-config\
+  /Users/morgancordray/anaconda2/bin/ncursesw6-config\
+  /Users/morgancordray/anaconda2/bin/pcre-config\
+  /Users/morgancordray/anaconda/bin/libdynd-config\
+  /Users/morgancordray/anaconda/bin/python2-config\
+  /Users/morgancordray/anaconda/bin/icu-config\
+  /Users/morgancordray/anaconda/bin/freetype-config\
+  /Users/morgancordray/anaconda/bin/xslt-config\
+  /Users/morgancordray/anaconda/bin/libpng16-config\
+  /Users/morgancordray/anaconda/bin/python2.7-config\
+  /Users/morgancordray/anaconda/bin/libpng-config\
+  /Users/morgancordray/anaconda/bin/xml2-config\
+  /Users/morgancordray/anaconda/bin/python-config\
+  /Users/morgancordray/anaconda/bin/curl-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/python2-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/python2.7-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/python-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/wx-config\
+  //anaconda/bin/libdynd-config\
+  //anaconda/bin/llvm-config\
+  //anaconda/bin/python2-config\
+  //anaconda/bin/freetype-config\
+  //anaconda/bin/xslt-config\
+  //anaconda/bin/python2.7-config\
+  //anaconda/bin/libpng-config\
+  //anaconda/bin/xml2-config\
+  //anaconda/bin/python-config\
+  //anaconda/bin/curl-config\
+  //anaconda/bin/nc-config\
+  //anaconda/bin/libpng15-config\
+  /Library/Frameworks/Python.framework/Versions/3.3/bin/python3.3-config\
+  /Library/Frameworks/Python.framework/Versions/3.3/bin/python3-config\
+  /Library/Frameworks/Python.framework/Versions/3.3/bin/python3.3m-config\
+\
+\cf4 Warning:\cf2  Unbrewed dylibs were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected dylibs:\
+  /usr/local/lib/libtcl8.6.dylib\
+  /usr/local/lib/libtk8.6.dylib\
+\
+\cf4 Warning:\cf2  Unbrewed header files were found in /usr/local/include.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected header files:\
+  /usr/local/include/fakemysql.h\
+  /usr/local/include/fakepq.h\
+  /usr/local/include/fakesql.h\
+  /usr/local/include/itcl.h\
+  /usr/local/include/itcl2TclOO.h\
+  /usr/local/include/itclDecls.h\
+  /usr/local/include/itclInt.h\
+  /usr/local/include/itclIntDecls.h\
+  /usr/local/include/itclMigrate2TclCore.h\
+  /usr/local/include/itclTclIntStubsFcn.h\
+  /usr/local/include/mysqlStubs.h\
+  /usr/local/include/odbcStubs.h\
+  /usr/local/include/pqStubs.h\
+  /usr/local/include/tcl.h\
+  /usr/local/include/tclDecls.h\
+  /usr/local/include/tclOO.h\
+  /usr/local/include/tclOODecls.h\
+  /usr/local/include/tclPlatDecls.h\
+  /usr/local/include/tclThread.h\
+  /usr/local/include/tclTomMath.h\
+  /usr/local/include/tclTomMathDecls.h\
+  /usr/local/include/tdbc.h\
+  /usr/local/include/tdbcDecls.h\
+  /usr/local/include/tdbcInt.h\
+  /usr/local/include/tk.h\
+  /usr/local/include/tkDecls.h\
+  /usr/local/include/tkPlatDecls.h\
+\
+\cf4 Warning:\cf2  Unbrewed .pc files were found in /usr/local/lib/pkgconfig.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected .pc files:\
+  /usr/local/lib/pkgconfig/tcl.pc\
+  /usr/local/lib/pkgconfig/tk.pc\
+\
+\cf4 Warning:\cf2  Unbrewed static libraries were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected static libraries:\
+  /usr/local/lib/libtclstub8.6.a\
+  /usr/local/lib/libtkstub8.6.a\
+\
+\cf4 Warning:\cf2  You have unlinked kegs in your Cellar.\
+Leaving kegs unlinked can lead to build-trouble and cause brews that depend on\
+those kegs to fail to run properly once built. Run `brew link` on these:\
+  python\
+MacBook-Pro:~ morgancordray$ brew link python3\
+Linking /usr/local/Cellar/python/3.7.4... \cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ brew doctor\
+
+\f1\b Please note that these warnings are just used to help the Homebrew maintainers
+\f0\b0 \
+
+\f1\b with debugging if you file an issue. If everything you use Homebrew for is
+\f0\b0 \
+
+\f1\b working fine: please don't worry or file an issue; just ignore this. Thanks!
+\f0\b0 \
+\
+\cf4 Warning:\cf2  "config" scripts exist outside your system or Homebrew directories.\
+`./configure` scripts often look for *-config scripts to determine if\
+software packages are installed, and which additional flags to use when\
+compiling and linking.\
+\
+Having additional scripts in your path can confuse software installed via\
+Homebrew if the config script overrides a system or Homebrew-provided\
+script of the same name. We found the following "config" scripts:\
+  /Users/morgancordray/anaconda2/bin/ncursesw6-config\
+  /Users/morgancordray/anaconda/bin/libdynd-config\
+  /Users/morgancordray/anaconda/bin/python2-config\
+  /Users/morgancordray/anaconda/bin/icu-config\
+  /Users/morgancordray/anaconda/bin/freetype-config\
+  /Users/morgancordray/anaconda/bin/xslt-config\
+  /Users/morgancordray/anaconda/bin/libpng16-config\
+  /Users/morgancordray/anaconda/bin/python2.7-config\
+  /Users/morgancordray/anaconda/bin/libpng-config\
+  /Users/morgancordray/anaconda/bin/xml2-config\
+  /Users/morgancordray/anaconda/bin/python-config\
+  /Users/morgancordray/anaconda/bin/curl-config\
+  /Library/Frameworks/Python.framework/Versions/Current/bin/wx-config\
+  //anaconda/bin/llvm-config\
+  //anaconda/bin/nc-config\
+\
+\cf4 Warning:\cf2  Unbrewed dylibs were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected dylibs:\
+  /usr/local/lib/libtcl8.6.dylib\
+  /usr/local/lib/libtk8.6.dylib\
+\
+\cf4 Warning:\cf2  Unbrewed header files were found in /usr/local/include.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected header files:\
+  /usr/local/include/fakemysql.h\
+  /usr/local/include/fakepq.h\
+  /usr/local/include/fakesql.h\
+  /usr/local/include/itcl.h\
+  /usr/local/include/itcl2TclOO.h\
+  /usr/local/include/itclDecls.h\
+  /usr/local/include/itclInt.h\
+  /usr/local/include/itclIntDecls.h\
+  /usr/local/include/itclMigrate2TclCore.h\
+  /usr/local/include/itclTclIntStubsFcn.h\
+  /usr/local/include/mysqlStubs.h\
+  /usr/local/include/odbcStubs.h\
+  /usr/local/include/pqStubs.h\
+  /usr/local/include/tcl.h\
+  /usr/local/include/tclDecls.h\
+  /usr/local/include/tclOO.h\
+  /usr/local/include/tclOODecls.h\
+  /usr/local/include/tclPlatDecls.h\
+  /usr/local/include/tclThread.h\
+  /usr/local/include/tclTomMath.h\
+  /usr/local/include/tclTomMathDecls.h\
+  /usr/local/include/tdbc.h\
+  /usr/local/include/tdbcDecls.h\
+  /usr/local/include/tdbcInt.h\
+  /usr/local/include/tk.h\
+  /usr/local/include/tkDecls.h\
+  /usr/local/include/tkPlatDecls.h\
+\
+\cf4 Warning:\cf2  Unbrewed .pc files were found in /usr/local/lib/pkgconfig.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected .pc files:\
+  /usr/local/lib/pkgconfig/tcl.pc\
+  /usr/local/lib/pkgconfig/tk.pc\
+\
+\cf4 Warning:\cf2  Unbrewed static libraries were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected static libraries:\
+  /usr/local/lib/libtclstub8.6.a\
+  /usr/local/lib/libtkstub8.6.a\
+\
+\cf4 Warning:\cf2  You have unlinked kegs in your Cellar.\
+Leaving kegs unlinked can lead to build-trouble and cause brews that depend on\
+those kegs to fail to run properly once built. Run `brew link` on these:\
+  python\
+MacBook-Pro:~ morgancordray$ brew doctor\
+
+\f1\b Please note that these warnings are just used to help the Homebrew maintainers
+\f0\b0 \
+
+\f1\b with debugging if you file an issue. If everything you use Homebrew for is
+\f0\b0 \
+
+\f1\b working fine: please don't worry or file an issue; just ignore this. Thanks!
+\f0\b0 \
+\
+\cf4 Warning:\cf2  Unbrewed dylibs were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected dylibs:\
+  /usr/local/lib/libtcl8.6.dylib\
+  /usr/local/lib/libtk8.6.dylib\
+\
+\cf4 Warning:\cf2  Unbrewed header files were found in /usr/local/include.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected header files:\
+  /usr/local/include/fakemysql.h\
+  /usr/local/include/fakepq.h\
+  /usr/local/include/fakesql.h\
+  /usr/local/include/itcl.h\
+  /usr/local/include/itcl2TclOO.h\
+  /usr/local/include/itclDecls.h\
+  /usr/local/include/itclInt.h\
+  /usr/local/include/itclIntDecls.h\
+  /usr/local/include/itclMigrate2TclCore.h\
+  /usr/local/include/itclTclIntStubsFcn.h\
+  /usr/local/include/mysqlStubs.h\
+  /usr/local/include/odbcStubs.h\
+  /usr/local/include/pqStubs.h\
+  /usr/local/include/tcl.h\
+  /usr/local/include/tclDecls.h\
+  /usr/local/include/tclOO.h\
+  /usr/local/include/tclOODecls.h\
+  /usr/local/include/tclPlatDecls.h\
+  /usr/local/include/tclThread.h\
+  /usr/local/include/tclTomMath.h\
+  /usr/local/include/tclTomMathDecls.h\
+  /usr/local/include/tdbc.h\
+  /usr/local/include/tdbcDecls.h\
+  /usr/local/include/tdbcInt.h\
+  /usr/local/include/tk.h\
+  /usr/local/include/tkDecls.h\
+  /usr/local/include/tkPlatDecls.h\
+\
+\cf4 Warning:\cf2  Unbrewed .pc files were found in /usr/local/lib/pkgconfig.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected .pc files:\
+  /usr/local/lib/pkgconfig/tcl.pc\
+  /usr/local/lib/pkgconfig/tk.pc\
+\
+\cf4 Warning:\cf2  Unbrewed static libraries were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected static libraries:\
+  /usr/local/lib/libtclstub8.6.a\
+  /usr/local/lib/libtkstub8.6.a\
+\
+\cf4 Warning:\cf2  You have unlinked kegs in your Cellar.\
+Leaving kegs unlinked can lead to build-trouble and cause brews that depend on\
+those kegs to fail to run properly once built. Run `brew link` on these:\
+  python\
+MacBook-Pro:~ morgancordray$ brew link python3\
+Linking /usr/local/Cellar/python/3.7.4... \cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ brew doctor\
+
+\f1\b Please note that these warnings are just used to help the Homebrew maintainers
+\f0\b0 \
+
+\f1\b with debugging if you file an issue. If everything you use Homebrew for is
+\f0\b0 \
+
+\f1\b working fine: please don't worry or file an issue; just ignore this. Thanks!
+\f0\b0 \
+\
+\cf4 Warning:\cf2  Unbrewed dylibs were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected dylibs:\
+  /usr/local/lib/libtcl8.6.dylib\
+  /usr/local/lib/libtk8.6.dylib\
+\
+\cf4 Warning:\cf2  Unbrewed header files were found in /usr/local/include.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected header files:\
+  /usr/local/include/fakemysql.h\
+  /usr/local/include/fakepq.h\
+  /usr/local/include/fakesql.h\
+  /usr/local/include/itcl.h\
+  /usr/local/include/itcl2TclOO.h\
+  /usr/local/include/itclDecls.h\
+  /usr/local/include/itclInt.h\
+  /usr/local/include/itclIntDecls.h\
+  /usr/local/include/itclMigrate2TclCore.h\
+  /usr/local/include/itclTclIntStubsFcn.h\
+  /usr/local/include/mysqlStubs.h\
+  /usr/local/include/odbcStubs.h\
+  /usr/local/include/pqStubs.h\
+  /usr/local/include/tcl.h\
+  /usr/local/include/tclDecls.h\
+  /usr/local/include/tclOO.h\
+  /usr/local/include/tclOODecls.h\
+  /usr/local/include/tclPlatDecls.h\
+  /usr/local/include/tclThread.h\
+  /usr/local/include/tclTomMath.h\
+  /usr/local/include/tclTomMathDecls.h\
+  /usr/local/include/tdbc.h\
+  /usr/local/include/tdbcDecls.h\
+  /usr/local/include/tdbcInt.h\
+  /usr/local/include/tk.h\
+  /usr/local/include/tkDecls.h\
+  /usr/local/include/tkPlatDecls.h\
+\
+\cf4 Warning:\cf2  Unbrewed .pc files were found in /usr/local/lib/pkgconfig.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected .pc files:\
+  /usr/local/lib/pkgconfig/tcl.pc\
+  /usr/local/lib/pkgconfig/tk.pc\
+\
+\cf4 Warning:\cf2  Unbrewed static libraries were found in /usr/local/lib.\
+If you didn't put them there on purpose they could cause problems when\
+building Homebrew formulae, and may need to be deleted.\
+\
+Unexpected static libraries:\
+  /usr/local/lib/libtclstub8.6.a\
+  /usr/local/lib/libtkstub8.6.a\
+\
+\cf4 Warning:\cf2  You have unlinked kegs in your Cellar.\
+Leaving kegs unlinked can lead to build-trouble and cause brews that depend on\
+those kegs to fail to run properly once built. Run `brew link` on these:\
+  python\
+MacBook-Pro:~ morgancordray$ brew link python\
+Linking /usr/local/Cellar/python/3.7.4... \cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ sudo mkdir /usr/local/lib\
+Password:\
+mkdir: /usr/local/lib: File exists\
+MacBook-Pro:~ morgancordray$ sudo mkdir /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ brew link python\
+Linking /usr/local/Cellar/python/3.7.4... \cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks/Python.framework\
+MacBook-Pro:~ morgancordray$ install python /usr/local/Frameworks/Python.framework\
+install: python: No such file or directory\
+MacBook-Pro:~ morgancordray$ brew install python3\
+\cf4 Warning:\cf2  python 3.7.4 is already installed, it's just not linked\
+You can use `brew link python` to link this version.\
+MacBook-Pro:~ morgancordray$ brew link python3\
+Linking /usr/local/Cellar/python/3.7.4... \cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks/Python.framework\
+MacBook-Pro:~ morgancordray$ sudo mkdir /usr/local/Frameworks\
+Password:\
+mkdir: /usr/local/Frameworks: File exists\
+MacBook-Pro:~ morgancordray$ sudo mkdir /usr/local/Frameworks/Python.framework\
+MacBook-Pro:~ morgancordray$ brew install python3\
+\cf4 Warning:\cf2  python 3.7.4 is already installed, it's just not linked\
+You can use `brew link python` to link this version.\
+MacBook-Pro:~ morgancordray$ brew link python3\
+Linking /usr/local/Cellar/python/3.7.4... \cf6 Error:\cf2  Permission denied @ dir_s_mkdir - /usr/local/Frameworks/Python.framework/Versions\
+MacBook-Pro:~ morgancordray$ sudo mkdir /usr/local/Frameworks/Python.framework/Versions\
+MacBook-Pro:~ morgancordray$ brew link python3\
+Linking /usr/local/Cellar/python/3.7.4... \
+\cf6 Error:\cf2  Could not symlink Frameworks/Python.framework/Versions/3.7\
+/usr/local/Frameworks/Python.framework/Versions is not writable.\
+MacBook-Pro:~ morgancordray$ sudo chown $(whoami):admin /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ brew link python3\
+Linking /usr/local/Cellar/python/3.7.4... \
+\cf6 Error:\cf2  Could not symlink Frameworks/Python.framework/Versions/3.7\
+/usr/local/Frameworks/Python.framework/Versions is not writable.\
+MacBook-Pro:~ morgancordray$ sudo chown $(whoami):admin /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ brew link python3\
+Linking /usr/local/Cellar/python/3.7.4... \
+\cf6 Error:\cf2  Could not symlink Frameworks/Python.framework/Versions/3.7\
+/usr/local/Frameworks/Python.framework/Versions is not writable.\
+MacBook-Pro:~ morgancordray$ sudo chown $(whoami):admin /usr/local/Frameworks\
+MacBook-Pro:~ morgancordray$ brew link python3\
+Linking /usr/local/Cellar/python/3.7.4... 20 symlinks created\
+MacBook-Pro:~ morgancordray$ python --version\
+Python 2.7.15 :: Anaconda, Inc.\
+MacBook-Pro:~ morgancordray$ conda --version\
+conda 4.5.11\
+MacBook-Pro:~ morgancordray$ conda update\
+\
+CondaValueError: no package names supplied\
+# If you want to update to a newer version of Anaconda, type:\
+#\
+# $ conda update --prefix /Users/morgancordray/anaconda2 anaconda\
+\
+\
+MacBook-Pro:~ morgancordray$ conda update conda\
+Solving environment: done\
+\
+## Package Plan ##\
+\
+  environment location: /Users/morgancordray/anaconda2\
+\
+  added / updated specs: \
+    - conda\
+\
+\
+The following packages will be downloaded:\
+\
+    package                    |            build\
+    ---------------------------|-----------------\
+    r-mongolite-1.6            |   r351h46e59ec_1         331 KB\
+    conda-4.7.5                |           py27_0         3.0 MB\
+    r-pki-0.1_5.1              |   r351h46e59ec_1          95 KB\
+    conda-package-handling-1.3.11|           py27_0         260 KB\
+    libssh2-1.8.2              |       ha12b0ac_0         221 KB\
+    pycurl-7.43.0.3            |   py27ha12b0ac_0          71 KB\
+    cyrus-sasl-2.1.26          |       hb48c43a_4         257 KB\
+    cryptography-2.7           |   py27ha12b0ac_0         576 KB\
+    sqlite-3.26.0              |       ha441bb4_0         2.3 MB\
+    libdb-6.1.26               |       h0a44026_0        22.0 MB\
+    ca-certificates-2019.5.15  |                0         133 KB\
+    curl-7.65.2                |       ha441bb4_0         135 KB\
+    libcurl-7.65.2             |       h051b688_0         539 KB\
+    lz4-c-1.8.1.2              |       h1de35cc_0         119 KB\
+    krb5-1.16.1                |       hddcf347_7         1.1 MB\
+    r-openssl-1.0.2            |   r351h46e59ec_1         1.1 MB\
+    twisted-17.5.0             |           py27_0         4.4 MB\
+    python-2.7.15              |       h8f8e585_6        12.2 MB\
+    certifi-2019.6.16          |           py27_0         154 KB\
+    zstd-1.3.7                 |       h5bba6e5_0         593 KB\
+    libarchive-3.3.3           |       h786848e_5         1.5 MB\
+    python-libarchive-c-2.8    |          py27_11          22 KB\
+    openssl-1.1.1c             |       h1de35cc_1         3.4 MB\
+    ------------------------------------------------------------\
+                                           Total:        54.4 MB\
+\
+The following NEW packages will be INSTALLED:\
+\
+    conda-package-handling: 1.3.11-py27_0          \
+    libarchive:             3.3.3-h786848e_5       \
+    libdb:                  6.1.26-h0a44026_0      \
+    lz4-c:                  1.8.1.2-h1de35cc_0     \
+    python-libarchive-c:    2.8-py27_11            \
+    zstd:                   1.3.7-h5bba6e5_0       \
+\
+The following packages will be UPDATED:\
+\
+    ca-certificates:        2018.03.07-0            --> 2019.5.15-0            \
+    certifi:                2018.8.24-py27_1        --> 2019.6.16-py27_0       \
+    conda:                  4.5.11-py27_0           --> 4.7.5-py27_0           \
+    cryptography:           2.3.1-py27hdbc3d79_0    --> 2.7-py27ha12b0ac_0     \
+    curl:                   7.61.0-ha441bb4_0       --> 7.65.2-ha441bb4_0      \
+    cyrus-sasl:             2.1.26-h26aff7b_3       --> 2.1.26-hb48c43a_4      \
+    krb5:                   1.16.1-h24a3359_6       --> 1.16.1-hddcf347_7      \
+    libcurl:                7.61.0-hf30b1f0_0       --> 7.65.2-h051b688_0      \
+    libssh2:                1.8.0-h322a93b_4        --> 1.8.2-ha12b0ac_0       \
+    openssl:                1.0.2p-h1de35cc_0       --> 1.1.1c-h1de35cc_1      \
+    pycurl:                 7.43.0.2-py27hdbc3d79_0 --> 7.43.0.3-py27ha12b0ac_0\
+    python:                 2.7.15-h138c1fe_0       --> 2.7.15-h8f8e585_6      \
+    r-mongolite:            1.6-r351h6402f54_0      --> 1.6-r351h46e59ec_1     \
+    r-openssl:              1.0.2-r351h6402f54_0    --> 1.0.2-r351h46e59ec_1   \
+    r-pki:                  0.1_5.1-r351h6402f54_0  --> 0.1_5.1-r351h46e59ec_1 \
+    sqlite:                 3.24.0-ha441bb4_0       --> 3.26.0-ha441bb4_0      \
+\
+The following packages will be DOWNGRADED:\
+\
+    twisted:                18.7.0-py27h1de35cc_1   --> 17.5.0-py27_0          \
+\
+Proceed ([y]/n)? y\
+\
+\
+Downloading and Extracting Packages\
+r-mongolite-1.6      | 331 KB    | ############################################################## | 100% \
+conda-4.7.5          | 3.0 MB    | ############################################################## | 100% \
+r-pki-0.1_5.1        | 95 KB     | ############################################################## | 100% \
+conda-package-handli | 260 KB    | ############################################################## | 100% \
+libssh2-1.8.2        | 221 KB    | ############################################################## | 100% \
+pycurl-7.43.0.3      | 71 KB     | ############################################################## | 100% \
+cyrus-sasl-2.1.26    | 257 KB    | ############################################################## | 100% \
+cryptography-2.7     | 576 KB    | ############################################################## | 100% \
+sqlite-3.26.0        | 2.3 MB    | ############################################################## | 100% \
+libdb-6.1.26         | 22.0 MB   | ############################################################## | 100% \
+ca-certificates-2019 | 133 KB    | ############################################################## | 100% \
+curl-7.65.2          | 135 KB    | ############################################################## | 100% \
+libcurl-7.65.2       | 539 KB    | ############################################################## | 100% \
+lz4-c-1.8.1.2        | 119 KB    | ############################################################## | 100% \
+krb5-1.16.1          | 1.1 MB    | ############################################################## | 100% \
+r-openssl-1.0.2      | 1.1 MB    | ############################################################## | 100% \
+twisted-17.5.0       | 4.4 MB    | ############################################################## | 100% \
+python-2.7.15        | 12.2 MB   | ############################################################## | 100% \
+certifi-2019.6.16    | 154 KB    | ############################################################## | 100% \
+zstd-1.3.7           | 593 KB    | ############################################################## | 100% \
+libarchive-3.3.3     | 1.5 MB    | ############################################################## | 100% \
+python-libarchive-c- | 22 KB     | ############################################################## | 100% \
+openssl-1.1.1c       | 3.4 MB    | ############################################################## | 100% \
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: done\
+(base) MacBook-Pro:~ morgancordray$ conda create --name dogs\
+WARNING conda.base.context:use_only_tar_bz2(632): Conda is constrained to only using the old .tar.bz2 file format because you have conda-build installed, and it is <3.18.3.  Update or remove conda-build to get smaller downloads and faster extractions.\
+Collecting package metadata (repodata.json): done\
+Solving environment: done\
+\
+## Package Plan ##\
+\
+  environment location: /Users/morgancordray/anaconda2/envs/dogs\
+\
+\
+\
+Proceed ([y]/n)? y\
+\
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: done\
+#\
+# To activate this environment, use\
+#\
+#     $ conda activate dogs\
+#\
+# To deactivate an active environment, use\
+#\
+#     $ conda deactivate\
+\
+(base) MacBook-Pro:~ morgancordray$ conda activate dogs\
+(dogs) MacBook-Pro:~ morgancordray$ conda create --name cats\
+WARNING conda.base.context:use_only_tar_bz2(632): Conda is constrained to only using the old .tar.bz2 file format because you have conda-build installed, and it is <3.18.3.  Update or remove conda-build to get smaller downloads and faster extractions.\
+Collecting package metadata (repodata.json): done\
+Solving environment: done\
+\
+## Package Plan ##\
+\
+  environment location: /Users/morgancordray/anaconda2/envs/cats\
+\
+\
+\
+Proceed ([y]/n)? y\
+\
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: done\
+#\
+# To activate this environment, use\
+#\
+#     $ conda activate cats\
+#\
+# To deactivate an active environment, use\
+#\
+#     $ conda deactivate\
+\
+(dogs) MacBook-Pro:~ morgancordray$ source activate cats\
+Could not find conda environment: cats\
+You can list all discoverable environments with `conda info --envs`.\
+\
+(dogs) MacBook-Pro:~ morgancordray$ conda activate cats\
+Could not find conda environment: cats\
+You can list all discoverable environments with `conda info --envs`.\
+\
+(dogs) MacBook-Pro:~ morgancordray$ conda activate cats\
+Could not find conda environment: cats\
+You can list all discoverable environments with `conda info --envs`.\
+\
+(dogs) MacBook-Pro:~ morgancordray$ deactivate dogs\
+Error: deactivate must be sourced. Run 'source deactivate'\
+instead of 'deactivate'.\
+(dogs) MacBook-Pro:~ morgancordray$ conda deactivate dogs\
+deactivate does not accept arguments\
+remainder_args: ('dogs',)\
+\
+(dogs) MacBook-Pro:~ morgancordray$ conda deactivate\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda activate cats\
+Could not find conda environment: cats\
+You can list all discoverable environments with `conda info --envs`.\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda create --name cats\
+Solving environment: done\
+\
+\
+==> WARNING: A newer version of conda exists. <==\
+  current version: 4.4.7\
+  latest version: 4.7.5\
+\
+Please update conda by running\
+\
+    $ conda update -n base conda\
+\
+\
+\
+## Package Plan ##\
+\
+  environment location: /Users/morgancordray/anaconda/envs/cats\
+\
+\
+Proceed ([y]/n)? n\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda update -n base conda\
+Solving environment: done\
+\
+## Package Plan ##\
+\
+  environment location: /Users/morgancordray/anaconda\
+\
+  added / updated specs: \
+    - conda\
+\
+\
+The following packages will be downloaded:\
+\
+    package                    |            build\
+    ---------------------------|-----------------\
+    conda-4.7.5                |           py27_0         3.0 MB\
+    pycurl-7.19.0              |           py27_1         189 KB\
+    libxml2-2.9.9              |       hf6e021a_1         1.9 MB\
+    libcurl-7.62.0             |       h051b688_0         488 KB\
+    qt-4.8.7                   |                1        39.0 MB\
+    python-libarchive-c-2.8    |          py27_11          22 KB\
+    lzo-2.10                   |       h362108e_2         190 KB\
+    libarchive-3.3.3           |       h786848e_5         1.5 MB\
+    tqdm-4.32.1                |             py_0          48 KB\
+    urllib3-1.24.2             |           py27_0         151 KB\
+    xz-5.2.4                   |       h1de35cc_4         269 KB\
+    libcxx-4.0.1               |       hcfea43d_1         1.2 MB\
+    pysocks-1.7.0              |           py27_0          29 KB\
+    libxslt-1.1.29             |       hc208041_6         487 KB\
+    bzip2-1.0.8                |       h1de35cc_0         104 KB\
+    requests-2.22.0            |           py27_0          88 KB\
+    icu-58.2                   |       h4b95b61_1        22.3 MB\
+    openssl-1.1.1c             |       h1de35cc_1         3.4 MB\
+    python-2.7.6               |                0        11.0 MB\
+    lz4-c-1.8.1.2              |       h1de35cc_0         119 KB\
+    conda-package-handling-1.3.11|           py27_0         260 KB\
+    libiconv-1.15              |       hdd342a3_7         1.3 MB\
+    curl-7.62.0                |       ha441bb4_0         135 KB\
+    libssh2-1.8.2              |       ha12b0ac_0         221 KB\
+    libcxxabi-4.0.1            |       hcfea43d_1         458 KB\
+    certifi-2019.6.16          |           py27_0         154 KB\
+    cryptography-2.7           |   py27ha12b0ac_0         576 KB\
+    zstd-1.3.7                 |       h5bba6e5_0         593 KB\
+    ca-certificates-2019.5.15  |                0         133 KB\
+    ------------------------------------------------------------\
+                                           Total:        89.1 MB\
+\
+The following NEW packages will be INSTALLED:\
+\
+    bzip2:                  1.0.8-h1de35cc_0                 \
+    conda-package-handling: 1.3.11-py27_0                    \
+    libarchive:             3.3.3-h786848e_5                 \
+    libcurl:                7.62.0-h051b688_0                \
+    libcxx:                 4.0.1-hcfea43d_1                 \
+    libcxxabi:              4.0.1-hcfea43d_1                 \
+    libssh2:                1.8.2-ha12b0ac_0                 \
+    lz4-c:                  1.8.1.2-h1de35cc_0               \
+    lzo:                    2.10-h362108e_2                  \
+    pysocks:                1.7.0-py27_0                     \
+    python-libarchive-c:    2.8-py27_11                      \
+    tqdm:                   4.32.1-py_0                      \
+    urllib3:                1.24.2-py27_0                    \
+    zstd:                   1.3.7-h5bba6e5_0                 \
+\
+The following packages will be UPDATED:\
+\
+    ca-certificates:        2017.08.26-ha1e5d58_0    anaconda --> 2019.5.15-0       \
+    certifi:                2017.11.5-py27hfa9a1c4_0 anaconda --> 2019.6.16-py27_0  \
+    conda:                  4.4.7-py27_0             anaconda --> 4.7.5-py27_0      \
+    cryptography:           1.8.1-py27_0                      --> 2.7-py27ha12b0ac_0\
+    curl:                   7.52.1-0                          --> 7.62.0-ha441bb4_0 \
+    icu:                    54.1-0                            --> 58.2-h4b95b61_1   \
+    libiconv:               1.14-0                            --> 1.15-hdd342a3_7   \
+    libxml2:                2.9.4-0                           --> 2.9.9-hf6e021a_1  \
+    libxslt:                1.1.29-0                          --> 1.1.29-hc208041_6 \
+    openssl:                1.0.2n-hdbc3d79_0        anaconda --> 1.1.1c-h1de35cc_1 \
+    requests:               2.14.2-py27_0                     --> 2.22.0-py27_0     \
+    xz:                     5.2.3-0                           --> 5.2.4-h1de35cc_4  \
+\
+The following packages will be DOWNGRADED:\
+\
+    pycurl:                 7.43.0-py27_2                     --> 7.19.0-py27_1     \
+    python:                 2.7.13-0                          --> 2.7.6-0           \
+    qt:                     4.8.7-4                           --> 4.8.7-1           \
+\
+Proceed ([y]/n)? y\
+\
+\
+Downloading and Extracting Packages\
+conda 4.7.5: #################################################################################### | 100% \
+pycurl 7.19.0: ################################################################################## | 100% \
+libxml2 2.9.9: ################################################################################## | 100% \
+libcurl 7.62.0: ################################################################################# | 100% \
+qt 4.8.7: ####################################################################################### | 100% \
+python-libarchive-c 2.8: ######################################################################## | 100% \
+lzo 2.10: ####################################################################################### | 100% \
+libarchive 3.3.3: ############################################################################### | 100% \
+tqdm 4.32.1: #################################################################################### | 100% \
+urllib3 1.24.2: ################################################################################# | 100% \
+xz 5.2.4: ####################################################################################### | 100% \
+libcxx 4.0.1: ################################################################################### | 100% \
+pysocks 1.7.0: ################################################################################## | 100% \
+libxslt 1.1.29: ################################################################################# | 100% \
+bzip2 1.0.8: #################################################################################### | 100% \
+requests 2.22.0: ################################################################################ | 100% \
+icu 58.2: ####################################################################################### | 100% \
+openssl 1.1.1c: ################################################################################# | 100% \
+python 2.7.6: ################################################################################### | 100% \
+lz4-c 1.8.1.2: ################################################################################## | 100% \
+conda-package-handling 1.3.11: ################################################################## | 100% \
+libiconv 1.15: ################################################################################## | 100% \
+curl 7.62.0: #################################################################################### | 100% \
+libssh2 1.8.2: ################################################################################## | 100% \
+libcxxabi 4.0.1: ################################################################################ | 100% \
+certifi 2019.6.16: ############################################################################## | 100% \
+cryptography 2.7: ############################################################################### | 100% \
+zstd 1.3.7: ##################################################################################### | 100% \
+ca-certificates 2019.5.15: ###################################################################### | 100% \
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: failed\
+ERROR conda.core.link:_execute(481): An error occurred while uninstalling package 'defaults::qt-4.8.7-4'.\
+OSError(1, 'Operation not permitted')\
+Attempting to roll back.\
+\
+Rolling back transaction: done\
+\
+OSError(1, 'Operation not permitted')\
+\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda update -n base conda\
+Solving environment: done\
+\
+## Package Plan ##\
+\
+  environment location: /Users/morgancordray/anaconda\
+\
+  added / updated specs: \
+    - conda\
+\
+\
+The following NEW packages will be INSTALLED:\
+\
+    bzip2:                  1.0.8-h1de35cc_0                 \
+    conda-package-handling: 1.3.11-py27_0                    \
+    libarchive:             3.3.3-h786848e_5                 \
+    libcurl:                7.62.0-h051b688_0                \
+    libcxx:                 4.0.1-hcfea43d_1                 \
+    libcxxabi:              4.0.1-hcfea43d_1                 \
+    libssh2:                1.8.2-ha12b0ac_0                 \
+    lz4-c:                  1.8.1.2-h1de35cc_0               \
+    lzo:                    2.10-h362108e_2                  \
+    pysocks:                1.7.0-py27_0                     \
+    python-libarchive-c:    2.8-py27_11                      \
+    tqdm:                   4.32.1-py_0                      \
+    urllib3:                1.24.2-py27_0                    \
+    zstd:                   1.3.7-h5bba6e5_0                 \
+\
+The following packages will be UPDATED:\
+\
+    ca-certificates:        2017.08.26-ha1e5d58_0    anaconda --> 2019.5.15-0       \
+    certifi:                2017.11.5-py27hfa9a1c4_0 anaconda --> 2019.6.16-py27_0  \
+    conda:                  4.4.7-py27_0             anaconda --> 4.7.5-py27_0      \
+    cryptography:           1.8.1-py27_0                      --> 2.7-py27ha12b0ac_0\
+    curl:                   7.52.1-0                          --> 7.62.0-ha441bb4_0 \
+    icu:                    54.1-0                            --> 58.2-h4b95b61_1   \
+    libiconv:               1.14-0                            --> 1.15-hdd342a3_7   \
+    libxml2:                2.9.4-0                           --> 2.9.9-hf6e021a_1  \
+    libxslt:                1.1.29-0                          --> 1.1.29-hc208041_6 \
+    openssl:                1.0.2n-hdbc3d79_0        anaconda --> 1.1.1c-h1de35cc_1 \
+    requests:               2.14.2-py27_0                     --> 2.22.0-py27_0     \
+    xz:                     5.2.3-0                           --> 5.2.4-h1de35cc_4  \
+\
+The following packages will be DOWNGRADED:\
+\
+    pycurl:                 7.43.0-py27_2                     --> 7.19.0-py27_1     \
+    python:                 2.7.13-0                          --> 2.7.6-0           \
+    qt:                     4.8.7-4                           --> 4.8.7-1           \
+\
+Proceed ([y]/n)? y\
+\
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: failed\
+ERROR conda.core.link:_execute(481): An error occurred while uninstalling package 'defaults::qt-4.8.7-4'.\
+OSError(1, 'Operation not permitted')\
+Attempting to roll back.\
+\
+Rolling back transaction: done\
+\
+OSError(1, 'Operation not permitted')\
+\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ /Users/morgancordray/anaconda conda update -n base conda\
+-bash: /Users/morgancordray/anaconda: is a directory\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ -ls\
+-bash: -ls: command not found\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ /cd\
+-bash: /cd: No such file or directory\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda update -n base conda\
+Solving environment: done\
+\
+## Package Plan ##\
+\
+  environment location: /Users/morgancordray/anaconda\
+\
+  added / updated specs: \
+    - conda\
+\
+\
+The following NEW packages will be INSTALLED:\
+\
+    bzip2:                  1.0.8-h1de35cc_0                 \
+    conda-package-handling: 1.3.11-py27_0                    \
+    libarchive:             3.3.3-h786848e_5                 \
+    libcurl:                7.62.0-h051b688_0                \
+    libcxx:                 4.0.1-hcfea43d_1                 \
+    libcxxabi:              4.0.1-hcfea43d_1                 \
+    libssh2:                1.8.2-ha12b0ac_0                 \
+    lz4-c:                  1.8.1.2-h1de35cc_0               \
+    lzo:                    2.10-h362108e_2                  \
+    pysocks:                1.7.0-py27_0                     \
+    python-libarchive-c:    2.8-py27_11                      \
+    tqdm:                   4.32.1-py_0                      \
+    urllib3:                1.24.2-py27_0                    \
+    zstd:                   1.3.7-h5bba6e5_0                 \
+\
+The following packages will be UPDATED:\
+\
+    ca-certificates:        2017.08.26-ha1e5d58_0    anaconda --> 2019.5.15-0       \
+    certifi:                2017.11.5-py27hfa9a1c4_0 anaconda --> 2019.6.16-py27_0  \
+    conda:                  4.4.7-py27_0             anaconda --> 4.7.5-py27_0      \
+    cryptography:           1.8.1-py27_0                      --> 2.7-py27ha12b0ac_0\
+    curl:                   7.52.1-0                          --> 7.62.0-ha441bb4_0 \
+    icu:                    54.1-0                            --> 58.2-h4b95b61_1   \
+    libiconv:               1.14-0                            --> 1.15-hdd342a3_7   \
+    libxml2:                2.9.4-0                           --> 2.9.9-hf6e021a_1  \
+    libxslt:                1.1.29-0                          --> 1.1.29-hc208041_6 \
+    openssl:                1.0.2n-hdbc3d79_0        anaconda --> 1.1.1c-h1de35cc_1 \
+    requests:               2.14.2-py27_0                     --> 2.22.0-py27_0     \
+    xz:                     5.2.3-0                           --> 5.2.4-h1de35cc_4  \
+\
+The following packages will be DOWNGRADED:\
+\
+    pycurl:                 7.43.0-py27_2                     --> 7.19.0-py27_1     \
+    python:                 2.7.13-0                          --> 2.7.6-0           \
+    qt:                     4.8.7-4                           --> 4.8.7-1           \
+\
+Proceed ([y]/n)? y\
+\
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: failed\
+ERROR conda.core.link:_execute(481): An error occurred while uninstalling package 'defaults::qt-4.8.7-4'.\
+OSError(1, 'Operation not permitted')\
+Attempting to roll back.\
+\
+Rolling back transaction: done\
+\
+OSError(1, 'Operation not permitted')\
+\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ sudo apt-get purge --auto-remove qt-4.8.7-4\
+Password:\
+sudo: apt-get: command not found\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ dpkg --list\
+-bash: dpkg: command not found\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ sudo apt-get remove qt-4.8.7-4\
+sudo: apt-get: command not found\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ sudo conda purge --auto-remove qt-4.8.7-4\
+\
+CommandNotFoundError: No command 'conda purge'.\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ brew info qt\
+qt: stable 5.13.0 (bottled), HEAD [keg-only]\
+Cross-platform application and UI framework\
+\ul https://www.qt.io/\ulnone \
+Not installed\
+From: \ul https://github.com/Homebrew/homebrew-core/blob/master/Formula/qt.rb\ulnone \
+\cf3 ==>\cf2  
+\f1\b Dependencies
+\f0\b0 \
+Build: 
+\f1\b pkg-config \cf5 \uc0\u10004 
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Requirements
+\f0\b0 \
+Build: 
+\f1\b xcode \cf5 \uc0\u10004 
+\f0\b0 \cf2 \
+Required: 
+\f1\b macOS >= 10.12 \cf5 \uc0\u10004 
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Options
+\f0\b0 \
+--HEAD\
+	Install HEAD version\
+\cf3 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+We agreed to the Qt open source license for you.\
+If this is unacceptable you should uninstall.\
+\
+qt is keg-only, which means it was not symlinked into /usr/local,\
+because Qt 5 has CMake issues when linked.\
+\
+\cf3 ==>\cf2  
+\f1\b Analytics
+\f0\b0 \
+install: 57,291 (30 days), 164,062 (90 days), 563,419 (365 days)\
+install_on_request: 15,440 (30 days), 44,791 (90 days), 185,302 (365 days)\
+build_error: 0 (30 days)\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ brew cleanup\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ brew qt cleanup\
+\cf6 Error:\cf2  Unknown command: qt\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda update -n base conda\
+Solving environment: done\
+\
+## Package Plan ##\
+\
+  environment location: /Users/morgancordray/anaconda\
+\
+  added / updated specs: \
+    - conda\
+\
+\
+The following packages will be downloaded:\
+\
+    package                    |            build\
+    ---------------------------|-----------------\
+    conda-4.7.9                |           py27_0         3.0 MB\
+\
+The following NEW packages will be INSTALLED:\
+\
+    bzip2:                  1.0.8-h1de35cc_0                 \
+    conda-package-handling: 1.3.11-py27_0                    \
+    libarchive:             3.3.3-h786848e_5                 \
+    libcurl:                7.62.0-h051b688_0                \
+    libcxx:                 4.0.1-hcfea43d_1                 \
+    libcxxabi:              4.0.1-hcfea43d_1                 \
+    libssh2:                1.8.2-ha12b0ac_0                 \
+    lz4-c:                  1.8.1.2-h1de35cc_0               \
+    lzo:                    2.10-h362108e_2                  \
+    pysocks:                1.7.0-py27_0                     \
+    python-libarchive-c:    2.8-py27_11                      \
+    tqdm:                   4.32.1-py_0                      \
+    urllib3:                1.24.2-py27_0                    \
+    zstd:                   1.3.7-h5bba6e5_0                 \
+\
+The following packages will be UPDATED:\
+\
+    ca-certificates:        2017.08.26-ha1e5d58_0    anaconda --> 2019.5.15-0       \
+    certifi:                2017.11.5-py27hfa9a1c4_0 anaconda --> 2019.6.16-py27_0  \
+    conda:                  4.4.7-py27_0             anaconda --> 4.7.9-py27_0      \
+    cryptography:           1.8.1-py27_0                      --> 2.7-py27ha12b0ac_0\
+    curl:                   7.52.1-0                          --> 7.62.0-ha441bb4_0 \
+    icu:                    54.1-0                            --> 58.2-h4b95b61_1   \
+    libiconv:               1.14-0                            --> 1.15-hdd342a3_7   \
+    libxml2:                2.9.4-0                           --> 2.9.9-hf6e021a_1  \
+    libxslt:                1.1.29-0                          --> 1.1.29-hc208041_6 \
+    openssl:                1.0.2n-hdbc3d79_0        anaconda --> 1.1.1c-h1de35cc_1 \
+    requests:               2.14.2-py27_0                     --> 2.22.0-py27_0     \
+    xz:                     5.2.3-0                           --> 5.2.4-h1de35cc_4  \
+\
+The following packages will be DOWNGRADED:\
+\
+    pycurl:                 7.43.0-py27_2                     --> 7.19.0-py27_1     \
+    python:                 2.7.13-0                          --> 2.7.6-0           \
+    qt:                     4.8.7-4                           --> 4.8.7-1           \
+\
+Proceed ([y]/n)? y\
+\
+\
+Downloading and Extracting Packages\
+conda 4.7.9: #################################################################################### | 100% \
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: failed\
+ERROR conda.core.link:_execute(481): An error occurred while uninstalling package 'defaults::qt-4.8.7-4'.\
+OSError(1, 'Operation not permitted')\
+Attempting to roll back.\
+\
+Rolling back transaction: done\
+\
+OSError(1, 'Operation not permitted')\
+\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda info --envs\
+# conda environments:\
+#\
+base                     /Users/morgancordray/anaconda\
+                      *  /Users/morgancordray/anaconda2\
+                         /Users/morgancordray/anaconda2/envs/cats\
+                         /Users/morgancordray/anaconda2/envs/dogs\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda activate dogs\
+Could not find conda environment: dogs\
+You can list all discoverable environments with `conda info --envs`.\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ source activate dogs\
+Could not find conda environment: dogs\
+You can list all discoverable environments with `conda info --envs`.\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda create --name fish --clone dogs\
+\
+EnvironmentNameNotFound: Could not find conda environment: dogs\
+You can list all discoverable environments with `conda info --envs`.\
+\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda create --name dogs\
+Solving environment: done\
+\
+\
+==> WARNING: A newer version of conda exists. <==\
+  current version: 4.4.7\
+  latest version: 4.7.9\
+\
+Please update conda by running\
+\
+    $ conda update -n base conda\
+\
+\
+\
+## Package Plan ##\
+\
+  environment location: /Users/morgancordray/anaconda/envs/dogs\
+\
+\
+Proceed ([y]/n)? y\
+\
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: done\
+#\
+# To activate this environment, use\
+#\
+#     $ conda activate dogs\
+#\
+# To deactivate an active environment, use\
+#\
+#     $ conda deactivate\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda info --envs\
+# conda environments:\
+#\
+base                     /Users/morgancordray/anaconda\
+dogs                     /Users/morgancordray/anaconda/envs/dogs\
+                      *  /Users/morgancordray/anaconda2\
+                         /Users/morgancordray/anaconda2/envs/cats\
+                         /Users/morgancordray/anaconda2/envs/dogs\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda create --name fish --clone dog\
+\
+EnvironmentNameNotFound: Could not find conda environment: dog\
+You can list all discoverable environments with `conda info --envs`.\
+\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda create --name fish --clone dogs\
+Source:      /Users/morgancordray/anaconda/envs/dogs\
+Destination: /Users/morgancordray/anaconda/envs/fish\
+Packages: 0\
+Files: 0\
+Preparing transaction: done\
+Verifying transaction: done\
+Executing transaction: done\
+#\
+# To activate this environment, use\
+#\
+#     $ conda activate fish\
+#\
+# To deactivate an active environment, use\
+#\
+#     $ conda deactivate\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda remove --name fish -all\
+usage: conda [-h] [-V] command ...\
+conda: error: unrecognized arguments: -all\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda remove --name fish\
+\
+CondaValueError: no package names supplied,\
+       try "conda remove -h" for more details\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda info --envs\
+# conda environments:\
+#\
+base                     /Users/morgancordray/anaconda\
+dogs                     /Users/morgancordray/anaconda/envs/dogs\
+fish                     /Users/morgancordray/anaconda/envs/fish\
+                      *  /Users/morgancordray/anaconda2\
+                         /Users/morgancordray/anaconda2/envs/cats\
+                         /Users/morgancordray/anaconda2/envs/dogs\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda remove --name fish -h\
+usage: conda remove [-h] [-y] [--dry-run] [--json] [--debug] [--verbose]\
+                    [--all] [--force] [--no-pin] [-c CHANNEL]\
+                    [--override-channels] [-n ENVIRONMENT | -p PATH] [-q] [-C]\
+                    [--use-local] [--offline] [-k] [--features]\
+                    [package_name [package_name ...]]\
+\
+Remove a list of packages from a specified conda environment.\
+\
+    This command will also remove any package that depends on any of the\
+    specified packages as well---unless a replacement can be found without\
+    that dependency. If you wish to skip this dependency checking and remove\
+    just the requested packages, add the '--force' option. Note however that\
+    this may result in a broken environment, so use this with caution.\
+\
+Options:\
+\
+positional arguments:\
+  package_name          Package names to remove from the environment.\
+\
+optional arguments:\
+  -h, --help            Show this help message and exit.\
+  -y, --yes             Do not ask for confirmation.\
+  --dry-run             Only display what would have been done.\
+  --json                Report all output as json. Suitable for using conda\
+                        programmatically.\
+  --debug               Show debug output.\
+  --verbose, -v         Use once for info, twice for debug, three times for\
+                        trace.\
+  --all                 Remove all packages, i.e., the entire environment.\
+  --force               Forces removal of a package without removing packages\
+                        that depend on it. Using this option will usually\
+                        leave your environment in a broken and inconsistent\
+                        state.\
+  --no-pin              Ignore pinned file.\
+  -c CHANNEL, --channel CHANNEL\
+                        Additional channel to search for packages. These are\
+                        URLs searched in the order they are given (including\
+                        file:// for local directories). Then, the defaults or\
+                        channels from .condarc are searched (unless\
+                        --override-channels is given). You can use 'defaults'\
+                        to get the default packages for conda, and 'system' to\
+                        get the system packages, which also takes .condarc\
+                        into account. You can also use any name and the\
+                        .condarc channel_alias value will be prepended. The\
+                        default channel_alias is http://conda.anaconda.org/.\
+  --override-channels   Do not search default or .condarc channels. Requires\
+                        --channel.\
+  -n ENVIRONMENT, --name ENVIRONMENT\
+                        Name of environment.\
+  -p PATH, --prefix PATH\
+                        Full path to environment prefix.\
+  -q, --quiet           Do not display progress bar.\
+  -C, --use-index-cache\
+                        Use cache of channel index files, even if it has\
+                        expired.\
+  --use-local           Use locally built packages.\
+  --offline             Offline mode, don't connect to the Internet.\
+  -k, --insecure        Allow conda to perform "insecure" SSL connections and\
+                        transfers. Equivalent to setting 'ssl_verify' to\
+                        'false'.\
+  --features            Remove features (instead of packages).\
+\
+Examples:\
+\
+    conda remove -n myenv scipy\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ conda remove --name fish --all\
+\
+Remove all packages in environment /Users/morgancordray/anaconda/envs/fish:\
+\
+Proceed ([y]/n)? y\
+\
+(/Users/morgancordray/anaconda2) MacBook-Pro:~ morgancordray$ \
+}
